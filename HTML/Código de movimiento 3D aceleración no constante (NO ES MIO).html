@@ -1,0 +1,764 @@
+Código de movimiento 3D aceleración no constante: Juliana alvarado David Nivia
+import os import webbrowser html_content = """<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PHYS3D · Particle Launcher</title>
+    <style>
+      :root { --bg:
+      #07090d; --panel:  #0c1018; --border: #182030; --accent: #00e5ff; --orange: #ff6b35; --green:  #a8ff3e; --red:
+      #ff3d3d; --dim:
+      #3a5060; --text:   #b8ccd8; --mono:   'Courier New', monospace;
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { height: 100%; overflow: hidden; background: var(--bg);
+      color: var(--text); font-family: var(--mono); }
+      body { display: flex; flex-direction: column; }
+      header {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 6px 14px; border-bottom: 1px solid var(--border);
+      background: #080b10; flex-shrink: 0;
+      }
+      .logo { font-weight: 900; font-size: 17px; letter-spacing: 4px; color:
+      var(--accent); }
+      .logo em { color: var(--orange); font-style: normal; }
+      .hdr-stats { display: flex; gap: 16px; }
+      .hdr-stat { text-align: center; font-size: 9px; color: var(--dim);
+      letter-spacing: 1px; }
+      .hdr-stat b { display: block; font-size: 14px; color: var(--green); }
+      .main { display: flex; flex: 1; overflow: hidden; min-height: 0; }
+      #cw { flex: 1; position: relative; overflow: hidden; }
+      #cw canvas { display: block; width: 100% !important; height: 100%
+      !important; }
+      .hud {
+      position: absolute; top: 8px; left: 10px;
+      font-size: 10px; line-height: 1.9; color: var(--dim); pointer-events:
+      none;
+      }
+      .hud span { color: var(--accent); }
+      #banner {
+      position: absolute; top: 50%; left: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      font-weight: 900; font-size: 52px; letter-spacing: 5px; text-transform:
+      uppercase;
+      pointer-events: none;
+      transition: transform .3s cubic-bezier(.175,.885,.32,1.275), opacity
+      .3s;
+      opacity: 0;
+      }
+      #banner.show { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+      #banner.ok { color: var(--green); text-shadow: 0 0 30px var(--green); }
+      #banner.ko { color: var(--red);   text-shadow: 0 0 30px var(--red); }
+      .panel {
+      width: 256px; background: var(--panel);
+      border-left: 1px solid var(--border);
+      display: flex; flex-direction: column;
+      overflow-y: auto; flex-shrink: 0;
+      }
+      .panel::-webkit-scrollbar { width: 3px; }
+      .panel::-webkit-scrollbar-thumb { background: var(--border); }
+      .sec { padding: 10px 12px; border-bottom: 1px solid var(--border); }
+      .sec-title { font-size: 9px; letter-spacing: 2px; text-transform:
+      uppercase; color: var(--dim); margin-bottom: 8px; }
+      .row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+      .field { margin-bottom: 6px; }
+      .field label { display: block; font-size: 8px; color: var(--dim); letter
+      spacing: 1px; margin-bottom: 2px; }
+      .field input {
+      width: 100%; background: #050709; border: 1px solid var(--border);
+      color: var(--accent); font-family: var(--mono); font-size: 12px;
+      padding: 4px 6px; outline: none; -moz-appearance: textfield;
+      transition: border-color .2s;
+      }
+      .field input::-webkit-inner-spin-button,
+      .field input::-webkit-outer-spin-button { -webkit-appearance: none; }
+      .field input:focus { border-color: var(--accent); }
+      .btn-launch {
+      width: 100%; padding: 10px; background: transparent;
+      border: 2px solid var(--orange); color: var(--orange);
+      font-weight: 900; font-size: 15px; letter-spacing: 4px;
+      text-transform: uppercase; cursor: pointer; transition: all .2s;
+      margin-top: 2px;
+      }
+      .btn-launch:hover { background: rgba(255,107,53,.1); }
+      .btn-launch:active { transform: scale(.98); }
+      .btn-launch:disabled { opacity: .3; cursor: not-allowed; }
+      .btn-sec {
+      width: 100%; padding: 6px; margin-top: 5px;
+      background: transparent; border: 1px solid var(--border);
+      color: var(--dim); font-family: var(--mono); font-size: 9px;
+      letter-spacing: 2px; text-transform: uppercase; cursor: pointer;
+      transition: all .2s;
+      }
+      .btn-sec:hover { border-color: var(--dim); color: var(--text); }
+      .igrid { display: grid; grid-template-columns: 1fr 1fr; gap: 5px; }
+      .icell { background: #050709; border: 1px solid var(--border); padding:
+      5px 7px; }
+      .icell .lbl { font-size: 8px; color: var(--dim); letter-spacing: 1px;
+      text-transform: uppercase; margin-bottom: 2px; }
+      .icell .val { font-size: 12px; color: var(--green); font-weight: bold; }
+      .formula {
+      background: #050709; border-left: 2px solid var(--accent);
+      padding: 6px 8px; font-size: 9px; color: var(--dim); line-height: 1.7;
+      margin-top: 3px;
+      }
+      .formula b { color: var(--text); }
+      .log { flex: 1; overflow-y: auto; padding: 8px 12px; }
+      .log::-webkit-scrollbar { width: 3px; }
+      .log::-webkit-scrollbar-thumb { background: var(--border); }
+      .log-title { font-size: 9px; letter-spacing: 2px; color: var(--dim);
+      text-transform: uppercase; margin-bottom: 5px; }
+      .log-row {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 3px 0; border-bottom: 1px solid rgba(255,255,255,.03); font
+      size: 9px;
+      }
+      .log-row .n { color: var(--dim); width: 18px; }
+      .log-row .d { flex: 1; color: var(--text); }
+      .log-row .r { font-weight: bold; }
+      .log-row .r.ok { color: var(--green); }
+      .log-row .r.ko { color: var(--red); }
+      input[type=range] { -webkit-appearance: none; width: 100%; height: 2px;
+      background: var(--border); outline: none; margin: 5px 0;
+      }
+      input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; width: 10px; height: 10px;
+      background: var(--accent); border-radius: 50%; cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">PHYS<em>3D</em> &middot; Particle Launcher</div>
+      <div class="hdr-stats">
+        <div class="hdr-stat"><b id="h-int">0</b>INTENTOS</div>
+        <div class="hdr-stat"><b id="h-aci">0</b>ACIERTOS</div>
+        <div class="hdr-stat"><b id="h-prc">—</b>PRECISIÓN</div>
+        <div class="hdr-stat">
+          <b style="color: var(-accent)">RK4</b>INTEGRACIÓN
+        </div>
+      </div>
+    </header>
+    <div class="main">
+      <div id="cw">
+        <div class="hud">
+          POS&nbsp;<span id="h-pos">—</span><br />
+          VEL&nbsp;<span id="h-vel">—</span><br />
+          t&nbsp;&nbsp;&nbsp;<span id="h-t">—</span>
+        </div>
+        <div id="banner"></div>
+      </div>
+      <div class="panel">
+        <div class="sec">
+          <div class="sec-title">Parámetros Físicos</div>
+          <div class="row2">
+            <div class="field">
+              <label>Masa (kg)</label
+              ><input
+                type="number"
+                id="p-m"
+                value="0.62"
+                min="0.01"
+                step="0.01"
+              />
+            </div>
+            <div class="field">
+              <label>Radio (m)</label
+              ><input
+                type="number"
+                id="p-r"
+                value="0.12"
+                min="0.001"
+                step="0.01"
+              />
+            </div>
+          </div>
+          <div class="row2">
+            <div class="field">
+              <label>Cd (arrastre)</label
+              ><input
+                type="number"
+                id="p-cd"
+                value="0.47"
+                min="0"
+                step="0.01"
+              />
+            </div>
+            <div class="field">
+              <label>Δt impulso (s)</label
+              ><input
+                type="number"
+                id="p-dti"
+                value="0.1"
+                min="0.001"
+                step="0.01"
+              />
+            </div>
+          </div>
+          <div class="formula">
+            <b>v₀ = (F · Δt) / m</b><br />
+            A = π·r² &nbsp;|&nbsp; F_drag = −½·ρ·Cd·A·|v_rel|·v_rel
+          </div>
+        </div>
+        <div class="sec">
+          <div class="sec-title">Lanzamiento</div>
+          <div class="field">
+            <label>Fuerza inicial (N)</label
+            ><input type="number" id="l-f" value="120" min="1" step="1" />
+          </div>
+          <div class="row2">
+            <div class="field">
+              <label>Elevación θ (°)</label
+              ><input
+                type="number"
+                id="l-th"
+                value="45"
+                min="0"
+                max="89"
+                step="1"
+              />
+            </div>
+            <div class="field">
+              <label>Azimut φ (°)</label
+              ><input
+                type="number"
+                id="l-ph"
+                value="0"
+                min="-180"
+                max="180"
+                step="1"
+              />
+            </div>
+          </div>
+          <button class="btn-launch" id="btn-l" onclick="lanzar()">
+            LANZAR
+          </button>
+          <button class="btn-sec" onclick="nuevaEscena()">
+            ↺ Nueva escena (nueva semilla)
+          </button>
+        </div>
+        <div class="sec">
+          <div class="sec-title">Entorno</div>
+          <div class="igrid">
+            <div class="icell">
+              <div class="lbl">Viento X (m/s)</div>
+              <div class="val" id="e-wx">—</div>
+            </div>
+            <div class="icell">
+              <div class="lbl">Viento Z (m/s)</div>
+              <div class="val" id="e-wz">—</div>
+            </div>
+            <div class="icell">
+              <div class="lbl">Caja X (m)</div>
+              <div class="val" id="e-bx">—</div>
+            </div>
+            <div class="icell">
+              <div class="lbl">Caja Y (m)</div>
+              <div class="val" id="e-by">—</div>
+            </div>
+            <div class="icell">
+              <div class="lbl">Caja Z (m)</div>
+              <div class="val" id="e-bz">—</div>
+            </div>
+            <div class="icell">
+              <div class="lbl">Semilla</div>
+              <div class="val" id="e-sd">—</div>
+            </div>
+          </div>
+        </div>
+        <div class="sec">
+          <div class="sec-title">Cámara (arrastrar escena)</div>
+          <div class="field">
+            <label>Zoom</label>
+            <input
+              type="range"
+              id="zoom"
+              min="5"
+              max="80"
+              value="35"
+              oninput="if (controls) controls.setRadius(+this.value);"
+            />
+          </div>
+        </div>
+        <div class="log">
+          <div class="log-title">Registro de intentos</div>
+          <div id="log-entries"></div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"
+    >
+      <
+      /script>
+      <script>
+      /* ════════════════════════════════════════════════════════════════
+      OrbitControls — implementación inline para Three.js r128
+      ════════════════════════════════════════════════════════════════ */
+      THREE.OrbitControls = function(cam, el) {
+      var sph = new THREE.Spherical();
+      var drag = false, scale = 1;
+      var rs = new THREE.Vector2(), re = new THREE.Vector2(), rd = new
+      THREE.Vector2();
+      this.target = new THREE.Vector3(8, 3, 0);
+      var sc = this;
+      var off = new THREE.Vector3().copy(cam.position).sub(sc.target);
+      sph.setFromVector3(off);
+      el.addEventListener('mousedown', function(e) { drag = true;
+      rs.set(e.clientX, e.clientY); });
+      el.addEventListener('mousemove', function(e) {
+      if (!drag) return;
+      re.set(e.clientX, e.clientY); rd.subVectors(re, rs);
+      sph.theta -= 2 * Math.PI * rd.x / el.clientWidth;
+      sph.phi   -= 2 * Math.PI * rd.y / el.clientHeight;
+      sph.phi = Math.max(0.05, Math.min(Math.PI - 0.05, sph.phi));
+      rs.copy(re); sc.update();
+      });
+      el.addEventListener('mouseup',
+      function() { drag = false; });
+      el.addEventListener('mouseleave', function() { drag = false; });
+      el.addEventListener('wheel', function(e) {
+      scale *= e.deltaY > 0 ? 1.1 : 0.9; sc.update(); e.preventDefault();
+      }, { passive: false });
+      /* Touch */
+      el.addEventListener('touchstart', function(e) {
+      if (e.touches.length === 1) { drag = true;
+      rs.set(e.touches[0].clientX, e.touches[0].clientY); }
+      });
+      el.addEventListener('touchmove', function(e) {
+      if (!drag || e.touches.length !== 1) return;
+      re.set(e.touches[0].clientX, e.touches[0].clientY); rd.subVectors(re,
+      rs);
+      sph.theta -= 2 * Math.PI * rd.x / el.clientWidth;
+      sph.phi   -= 2 * Math.PI * rd.y / el.clientHeight;
+      sph.phi = Math.max(0.05, Math.min(Math.PI - 0.05, sph.phi));
+      rs.copy(re); sc.update();
+      });
+      el.addEventListener('touchend', function() { drag = false; });
+      this.update = function() {
+      sph.radius *= scale; sph.radius = Math.max(3, Math.min(150,
+      sph.radius)); scale = 1;
+      off.setFromSpherical(sph);
+      cam.position.copy(sc.target).add(off); cam.lookAt(sc.target);
+      };
+      this.setRadius = function(r) { sph.radius = r; this.update(); };
+      };
+      /* ════════════════════════════════════════════════════════════════
+      PRNG SEEDED — Mulberry32
+      ════════════════════════════════════════════════════════════════ */
+      var _rngState;
+      function initRNG(s) { _rngState = s; }
+      function rand() {
+      _rngState |= 0; _rngState = _rngState + 0x6D2B79F5 | 0;
+      var t = Math.imul(_rngState ^ _rngState >>> 15, 1 | _rngState);
+      t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t;
+      return ((t ^ t >>> 14) >>> 0) / 4294967296;
+      }
+      /* ════════════════════════════════════════════════════════════════
+      CONSTANTES FÍSICAS
+      ════════════════════════════════════════════════════════════════ */
+      var G   = 9.81;    // m/s²  — gravedad
+      var RHO = 1.225;   // kg/m³ — densidad del aire
+      /* ════════════════════════════════════════════════════════════════
+      ESTADO GLOBAL
+      ════════════════════════════════════════════════════════════════ */
+      var windX = 0, windZ = 0;
+      var boxPos = { x: 10, y: 2, z: 0 };
+      var intentos = 0, aciertos = 0;
+      var animId = null, simRunning = false;
+      var simState, simParams, simTime;
+      var controls; // declarado aquí para que el slider oninput pueda usarlo
+      /* ════════════════════════════════════════════════════════════════
+      THREE.JS — ESCENA, CÁMARA, RENDERER
+      ════════════════════════════════════════════════════════════════ */
+      var renderer = new THREE.WebGLRenderer({ antialias: true });
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+      renderer.shadowMap.enabled = true;
+      renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+      renderer.setClearColor(0x07090d);
+      var cw = document.getElementById('cw');
+      cw.appendChild(renderer.domElement);
+      var scene = new THREE.Scene();
+      scene.fog = new THREE.FogExp2(0x07090d, 0.008);
+      var camera = new THREE.PerspectiveCamera(55, 1, 0.1, 500);
+      camera.position.set(20, 16, 32);
+      /* ── FIX PRINCIPAL: resize() lee las dimensiones REALES del div ── */
+      function resize() {
+      var w = cw.clientWidth, h = cw.clientHeight;
+      if (w === 0 || h === 0) return; // seguridad: no redimensionar si aún
+      no hay layout
+      renderer.setSize(w, h, false);  // false = no cambiar el CSS, solo el
+      buffer interno
+      camera.aspect = w / h;
+      camera.updateProjectionMatrix();
+      }
+      window.addEventListener('resize', resize);
+      /* OrbitControls se crea DESPUÉS del renderer para que el elemento canvas
+      exista */
+      controls = new THREE.OrbitControls(camera, renderer.domElement);
+      controls.update();
+      /* ── Luces ── */
+      scene.add(new THREE.AmbientLight(0x223344, 1.2));
+      var sun = new THREE.DirectionalLight(0xaaccff, 1.4);
+      sun.position.set(20, 40, 20);
+      sun.castShadow = true;
+      sun.shadow.mapSize.set(1024, 1024);
+      sun.shadow.camera.left
+      = -60;
+      sun.shadow.camera.right  =  60;
+      sun.shadow.camera.top
+      =  60;
+      sun.shadow.camera.bottom = -60;
+      sun.shadow.camera.far
+      = 200;
+      scene.add(sun);
+      var fill = new THREE.DirectionalLight(0x334455, 0.6);
+      fill.position.set(-10, 5, -10);
+      scene.add(fill);
+      var envLight = new THREE.PointLight(0x00e5ff, 0.4, 60);
+      envLight.position.set(0, 10, 0);
+      scene.add(envLight);
+      /* ── Suelo ── */
+      (function buildFloor() {
+      var geo = new THREE.PlaneGeometry(120, 120);
+      var mat = new THREE.MeshStandardMaterial({ color: 0x0a1420, roughness:
+      0.9, metalness: 0.05 });
+      var floor = new THREE.Mesh(geo, mat);
+      floor.rotation.x = -Math.PI / 2;
+      floor.receiveShadow = true;
+      scene.add(floor);
+      var grid = new THREE.GridHelper(80, 80, 0x182030, 0x0f1820);
+      grid.position.y = 0.01;
+      scene.add(grid);
+      /* Ejes X (rojo), Y (verde), Z (cian) */
+      var axes = [
+      { color: 0xff3d3d, dir: [3, 0, 0] },
+      { color: 0xa8ff3e, dir: [0, 3, 0] },
+      { color: 0x00e5ff, dir: [0, 0, 3] }
+      ];
+      axes.forEach(function(a) {
+      var pts = [new THREE.Vector3(0, 0, 0), new THREE.Vector3(a.dir[0],
+      a.dir[1], a.dir[2])];
+      var geo = new THREE.BufferGeometry().setFromPoints(pts);
+      scene.add(new THREE.Line(geo, new THREE.LineBasicMaterial({ color:
+      a.color })));
+      });
+      })();
+      /* ── Partícula (esfera) ── */
+      var sphereGeo = new THREE.SphereGeometry(1, 24, 24); // radio ajustado
+      vía scale
+      var sphereMat = new THREE.MeshStandardMaterial({
+      color: 0xff6b35, roughness: 0.4, metalness: 0.3, emissive: 0x220800
+      });
+      var particle = new THREE.Mesh(sphereGeo, sphereMat);
+      particle.castShadow = true;
+      particle.visible = false;
+      scene.add(particle);
+      /* Halo de luz que acompaña a la partícula */
+      var pGlow = new THREE.PointLight(0xff6b35, 0, 10);
+      scene.add(pGlow);
+      /* ── Caja objetivo ── */
+      var boxMesh  = null;
+      var boxEdges = null;
+      function crearCaja(pos) {
+      if (boxMesh)  { scene.remove(boxMesh);  scene.remove(boxEdges); }
+      var geo = new THREE.BoxGeometry(1, 1, 1);
+      var mat = new THREE.MeshStandardMaterial({
+      color: 0x00e5ff, transparent: true, opacity: 0.18, side:
+      THREE.DoubleSide
+      });
+      boxMesh = new THREE.Mesh(geo, mat);
+      /* +0.5 en cada eje porque BoxGeometry está centrada en el origen */
+      boxMesh.position.set(pos.x + 0.5, pos.y + 0.5, pos.z + 0.5);
+      scene.add(boxMesh);
+      var edgeGeo = new THREE.EdgesGeometry(geo);
+      boxEdges = new THREE.LineSegments(edgeGeo, new
+      THREE.LineBasicMaterial({ color: 0x00e5ff }));
+      boxEdges.position.copy(boxMesh.position);
+      scene.add(boxEdges);
+      }
+      /* ── Trayectoria (trail) ── */
+      var trailPts  = [];
+      var trailLine = null;
+      function initTrail() {
+      if (trailLine) scene.remove(trailLine);
+      trailPts  = [];
+      trailLine = null;
+      }
+
+      function addTrail(p) {
+        trailPts.push(new THREE.Vector3(p.x, p.y, p.z));
+        if (trailLine) scene.remove(trailLine);
+        if (trailPts.length < 2) return;
+        var geo = new THREE.BufferGeometry().setFromPoints(trailPts);
+        trailLine = new THREE.Line(geo, new THREE.LineBasicMaterial({
+          color: 0xff6b35, transparent: true, opacity: 0.6
+        }));
+        scene.add(trailLine);
+      }
+
+      /* ════════════════════════════════════════════════════════════════
+         NUEVA ESCENA
+         ════════════════════════════════════════════════════════════════ */
+      function nuevaEscena() {
+        if (simRunning) return;
+
+        var seed = Math.floor(Math.random() * 999999);
+        initRNG(seed);
+
+        windX = (rand() - 0.5) * 10;
+        windZ = (rand() - 0.5) * 10;
+        boxPos = {
+          x:  5 + rand() * 15,
+          y:      rand() * 8,
+          z: -10 + rand() * 20
+        };
+
+        crearCaja(boxPos);
+        initTrail();
+
+        document.getElementById('e-wx').textContent = windX.toFixed(2);
+        document.getElementById('e-wz').textContent = windZ.toFixed(2);
+        document.getElementById('e-bx').textContent = boxPos.x.toFixed(2);
+        document.getElementById('e-by').textContent = boxPos.y.toFixed(2);
+        document.getElementById('e-bz').textContent = boxPos.z.toFixed(2);
+        document.getElementById('e-sd').textContent = seed;
+
+        ocultarBanner();
+      }
+
+      /* ════════════════════════════════════════════════════════════════
+         FÍSICA — RK4 (Runge-Kutta de 4to orden)
+
+         Estado s = { x, y, z, vx, vy, vz }
+         ds/dt = f(s):
+           d(pos)/dt = velocidad
+           d(vel)/dt = aceleración = (gravedad + arrastre) / masa
+
+         Un paso RK4:
+           k1 = f(s)
+           k2 = f(s + h/2 · k1)
+           k3 = f(s + h/2 · k2)
+           k4 = f(s + h   · k3)
+           s_nuevo = s + (h/6)(k1 + 2k2 + 2k3 + k4)
+         ════════════════════════════════════════════════════════════════ */
+
+      /**
+       * Calcula la aceleración total sobre la partícula.
+       * Fuerzas: gravedad + arrastre aerodinámico respecto al viento.
+       * F_drag = -½·ρ·Cd·A·|v_rel|²·v̂_rel
+       */
+      function aceleracion(s, m, Cd, A) {
+        var vrx = s.vx - windX;  // velocidad relativa al viento (X)
+        var vry = s.vy;            // viento sin componente vertical
+        var vrz = s.vz - windZ;  // velocidad relativa al viento (Z)
+
+        var spd = Math.sqrt(vrx * vrx + vry * vry + vrz * vrz);
+        var fDrag = 0.5 * RHO * Cd * A * spd * spd; // magnitud F_drag
+
+        var ax = 0, ay = -G, az = 0;
+        if (spd > 1e-8) {
+          ax -= (fDrag * vrx / spd) / m;
+          ay -= (fDrag * vry / spd) / m;
+          az -= (fDrag * vrz / spd) / m;
+        }
+        return { ax: ax, ay: ay, az: az };
+      }
+
+      function derivada(s, m, Cd, A) {
+        var a = aceleracion(s, m, Cd, A);
+        return { dx: s.vx, dy: s.vy, dz: s.vz, dvx: a.ax, dvy: a.ay, dvz: a.az
+      };
+      }
+
+      function sumar(s, d, h) {
+        return {
+          x:  s.x  + h * d.dx,  y:  s.y  + h * d.dy,  z:  s.z  + h * d.dz,
+          vx: s.vx + h * d.dvx, vy: s.vy + h * d.dvy, vz: s.vz + h * d.dvz
+        };
+      }
+
+      function rk4Step(s, h, m, Cd, A) {
+        var k1 = derivada(s,               m, Cd, A);
+        var k2 = derivada(sumar(s, k1, h/2), m, Cd, A);
+        var k3 = derivada(sumar(s, k2, h/2), m, Cd, A);
+        var k4 = derivada(sumar(s, k3, h),   m, Cd, A);
+        return {
+          x:  s.x  + (h/6) * (k1.dx  + 2*k2.dx  + 2*k3.dx  + k4.dx),
+          y:  s.y  + (h/6) * (k1.dy  + 2*k2.dy  + 2*k3.dy  + k4.dy),
+          z:  s.z  + (h/6) * (k1.dz  + 2*k2.dz  + 2*k3.dz  + k4.dz),
+          vx: s.vx + (h/6) * (k1.dvx + 2*k2.dvx + 2*k3.dvx + k4.dvx),
+          vy: s.vy + (h/6) * (k1.dvy + 2*k2.dvy + 2*k3.dvy + k4.dvy),
+          vz: s.vz + (h/6) * (k1.dvz + 2*k2.dvz + 2*k3.dvz + k4.dvz)
+        };
+      }
+
+      /* ── Detección de colisión con la caja 1×1×1 ── */
+      function enBox(p) {
+        return p.x >= boxPos.x && p.x <= boxPos.x + 1 &&
+               p.y >= boxPos.y && p.y <= boxPos.y + 1 &&
+               p.z >= boxPos.z && p.z <= boxPos.z + 1;
+      }
+
+      /* ════════════════════════════════════════════════════════════════
+         LOOP ÚNICO DE ANIMACIÓN
+         — siempre activo; cuando simRunning=true avanza la física
+         ════════════════════════════════════════════════════════════════ */
+      function loop() {
+        animId = requestAnimationFrame(loop);
+
+        if (simRunning) {
+          var dt = 1 / 240;      // paso de integración ~4.2 ms
+          var steps = 3;         // sub-pasos por frame
+
+          for (var i = 0; i < steps; i++) {
+            if (!simRunning) break;
+
+            simState = rk4Step(simState, dt, simParams.m, simParams.Cd,
+      simParams.A);
+            simTime += dt;
+
+            /* ¿Tocó el suelo? */
+            if (simState.y <= 0) {
+              simState.y = 0;
+              simRunning = false;
+              finalizar(false);
+              break;
+            }
+            /* ¿Entró en la caja? */
+            if (enBox(simState)) {
+              simRunning = false;
+              finalizar(true);
+              break;
+            }
+          }
+
+          if (simState) {
+            particle.position.set(simState.x, simState.y, simState.z);
+            pGlow.position.copy(particle.position);
+            addTrail(simState);
+
+            var spd = Math.sqrt(simState.vx*simState.vx +
+      simState.vy*simState.vy + simState.vz*simState.vz);
+            document.getElementById('h-pos').textContent =
+              '(' + simState.x.toFixed(1) + ', ' + simState.y.toFixed(1) + ', '
+      + simState.z.toFixed(1) + ') m';
+            document.getElementById('h-vel').textContent = spd.toFixed(2) + '
+      m/s';
+            document.getElementById('h-t').textContent   = simTime.toFixed(2) +
+      ' s';
+          }
+
+          if (!simRunning) {
+            particle.visible = false;
+            pGlow.intensity  = 0;
+          }
+        }
+
+        renderer.render(scene, camera);
+      }
+
+      /* ════════════════════════════════════════════════════════════════
+         LANZAR
+         Convierte fuerza → velocidad por impulso: v = (F·Δt) / m
+         Descompone en 3D usando elevación θ y azimut φ
+         ════════════════════════════════════════════════════════════════ */
+      function lanzar() {
+        if (simRunning) return;
+
+        var m   = parseFloat(document.getElementById('p-m').value);
+        var r   = parseFloat(document.getElementById('p-r').value);
+        var Cd  = parseFloat(document.getElementById('p-cd').value);
+        var dti = parseFloat(document.getElementById('p-dti').value);
+        var F   = parseFloat(document.getElementById('l-f').value);
+        var th  = parseFloat(document.getElementById('l-th').value) * Math.PI /
+      180;
+        var ph  = parseFloat(document.getElementById('l-ph').value) * Math.PI /
+      180;
+
+        var A  = Math.PI * r * r;          // área transversal de la esfera
+        var v0 = (F * dti) / m;            // impulso → velocidad inicial
+
+        particle.scale.setScalar(r);
+        simState = {
+          x: 0, y: 0.5, z: 0,
+          vx: v0 * Math.cos(th) * Math.cos(ph),
+          vy: v0 * Math.sin(th),
+          vz: v0 * Math.cos(th) * Math.sin(ph)
+        };
+        simParams = { m: m, Cd: Cd, A: A };
+        simTime   = 0;
+
+        particle.visible = true;
+        particle.position.set(0, 0.5, 0);
+        pGlow.intensity = 1.2;
+
+        initTrail();
+        ocultarBanner();
+        simRunning = true;
+      document.getElementById('btn-l').disabled = true;
+      }
+      /* ════════════════════════════════════════════════════════════════
+      FINALIZAR SIMULACIÓN
+      ════════════════════════════════════════════════════════════════ */
+      function finalizar(ok) {
+      intentos++;
+      if (ok) aciertos++;
+      /* Efecto visual en la caja al encestarse */
+      if (ok && boxMesh) {
+      boxMesh.material.color.set(0xa8ff3e);
+      boxMesh.material.opacity = 0.4;
+      setTimeout(function() {
+      if (boxMesh) { boxMesh.material.color.set(0x00e5ff);
+      boxMesh.material.opacity = 0.18; }
+      }, 800);
+      }
+      mostrarBanner(ok);
+      document.getElementById('h-int').textContent = intentos;
+      document.getElementById('h-aci').textContent = aciertos;
+      document.getElementById('h-prc').textContent =
+      intentos > 0 ? (100 * aciertos / intentos).toFixed(0) + '%' : '—';
+      /* Registro */
+      var row = document.createElement('div');
+      row.className = 'log-row';
+      row.innerHTML =
+      '<span class="n">#' + intentos + '</span>' +
+      '<span class="d">' + document.getElementById('l-f').value + 'N θ' +
+      document.getElementById('l-th').value + '° φ' +
+      document.getElementById('l-ph').value + '°</span>' +
+      '<span class="r ' + (ok ? 'ok' : 'ko') + '">' + (ok ? '✓ SÍ' : '✗
+      NO') + '</span>';
+      document.getElementById('log-entries').prepend(row);
+      document.getElementById('btn-l').disabled = false;
+      }
+      function mostrarBanner(ok) {
+      var b = document.getElementById('banner');
+      b.textContent = ok ? '¡ENCESTÓ!' : 'FALLÓ';
+      b.className = 'show ' + (ok ? 'ok' : 'ko');
+      setTimeout(ocultarBanner, 2000);
+      }
+      function ocultarBanner() {
+      document.getElementById('banner').className = '';
+      }
+      /* ════════════════════════════════════════════════════════════════
+      INICIO — doble rAF garantiza que el DOM ya tiene dimensiones
+      ════════════════════════════════════════════════════════════════ */
+      requestAnimationFrame(function() {
+      requestAnimationFrame(function() {
+      resize();
+      // ahora cw.clientWidth/Height son correctos
+      nuevaEscena();  // genera la primera escena
+      loop();
+      // arranca el loop único de animación
+      });
+      });
+    </script>
+  </body>
+</html>
+""" # 1. Definir el nombre del archivo de salida file_name =
+"particle_launcher.html" file_path = os.path.abspath(file_name) # 2. Escribir el
+contenido HTML en un archivo físico with open(file_path, "w", encoding="utf-8")
+as file: file.write(html_content) print(f"Archivo generado exitosamente en:
+{file_path}") print("La escena de Three.js se renderizará sin problemas en tu
+RTX 3050 Ti.") # 3. Abrir el archivo generado en el navegador predeterminado
+webbrowser.open(f"file://{file_path}")
