@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="1.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="1500"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><table title="clientes" custom_title="0" dock_id="2" table="4,8:mainclientes"/><dock_state state="000000ff00000000fd00000001000000020000077400000387fc0100000002fb000000160064006f0063006b00420072006f00770073006500310100000000ffffffff0000000000000000fb000000160064006f0063006b00420072006f00770073006500320100000000000007740000011e00ffffff000002690000000000000004000000040000000800000008fc00000000"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="clientes" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort><column index="0" mode="0"/></sort><column_widths><column index="1" value="79"/><column index="2" value="112"/><column index="3" value="110"/><column index="4" value="88"/><column index="5" value="78"/><column index="6" value="139"/><column index="7" value="210"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="copias" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort><column index="0" mode="0"/></sort><column_widths><column index="1" value="58"/><column index="2" value="82"/><column index="3" value="73"/><column index="4" value="69"/><column index="5" value="92"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="peliculas" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="35"/><column index="2" value="209"/><column index="3" value="47"/><column index="4" value="43"/><column index="5" value="407"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="prestamos" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="80"/><column index="2" value="101"/><column index="3" value="91"/><column index="4" value="72"/><column index="5" value="74"/><column index="6" value="53"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="sqlite_sequence" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="71"/><column index="2" value="35"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQL 1*">-- CREATE TABLE peliculas (
+-- 	id INTEGER PRIMARY KEY AUTOINCREMENT,
+-- 	titulo TEXT		NOT NULL,
+-- 	año INTEGER,
+-- 	critica NUMERIC,
+-- 	caratula TEXT 		--descripcion
+-- );
+-- 
+-- CREATE TABLE copias (
+-- 	n_copias INTEGER PRIMARY KEY AUTOINCREMENT,
+-- 	deteriorada INTEGER,  -- 0 == false, 1 == true
+-- 	formato TEXT,
+-- 	id_pelicula REFERENCES peliculas(id),
+-- 	precio_alquiler NUMERIC
+-- );
+-- 
+-- CREATE TABLE clientes (
+-- 	cod_cliente INTEGER PRIMARY KEY AUTOINCREMENT,
+-- 	dni INTEGER,
+-- 	nombre TEXT,
+-- 	apellido1 TEXT,
+-- 	apellido2 TEXT,
+-- 	direccion TEXT,
+-- 	email TEXT
+-- );
+-- 
+-- CREATE TABLE prestamos (
+-- 	id_prestamo INTEGER PRIMARY KEY AUTOINCREMENT,
+-- 	fecha_prestamo TEXT,
+-- 	fecha_entrega TEXT,
+-- 	fecha_tope TEXT,
+-- 	cod_cliente REFERENCES clientes(cod_cliente),
+-- 	n_copias REFERENCES copias(n_copias)
+-- );
+-- 
+-- 
+-- INSERT INTO peliculas (titulo,año,critica,caratula) VALUES
+-- 	('Ironman', 2008, 7.9,'Pelicula de superheroes, accion y ciencia ficcion'),
+-- 	('Como entrenar a tu dragon', 2010, 8.6, 'Pelicula de vikingos y dragones'),
+-- 	('Dr.Stone: Ryusui', 2022, 8.5, 'Pelicula cientifica y accion');
+-- 
+-- INSERT INTO copias (deteriorada,formato,id_pelicula,precio_alquiler) VALUES
+-- 	(1, 'DVD', 1, 10000),
+-- 	(0, 'BlueRay', 2, 20000),
+-- 	(0, 'BlueRay', 3, 15000);
+-- 
+-- INSERT INTO clientes (dni,nombre,apellido1,apellido2,direccion,email) VALUES
+-- 	('1036259057', 'Juan Esteban', 'Ciro', 'Gallego', 'Calle 2C #23-09', 'ciro23@gmail.com'),
+-- 	('1043309335', 'Sebastian', 'Hernandez', 'Muñoz', 'Calle 5M #09-01', 'costeñoburrita@gmail.com'),
+-- 	('1027570152', 'Simon', 'Camilo', 'Duque', 'Calle 3V #02-27', 'camilotralala@gmail.com');
+-- 
+-- INSERT INTO prestamos (fecha_prestamo,fecha_entrega,fecha_tope,cod_cliente,n_copias) VALUES
+-- 	('12/03/2024','4/06/2024','12/06/2024',1,3),
+-- 	('27/02/2023','3/04/2023','27/04/2023',1,2),
+-- 	('30/05/2021','15/08/20241','30/08/2021',2,1);
+-- 
+-- 
+-- SELECT * FROM clientes;
+-- 
+-- SELECT 
+--     c.*,
+--     p.cod_cliente AS tiene_prestamos
+-- FROM clientes AS c
+-- INNER JOIN prestamos AS p ON c.cod_cliente = p.cod_cliente;
+-- 
+-- 
+-- UPDATE copias
+-- SET deteriorada = deteriorada || ' *'		-- &quot;Se esta poniendo vieja&quot;
+-- WHERE deteriorada == 0;
+-- 
+-- -- DELETE FROM copias 
+-- -- WHERE formato = 'DVD';
+
+SELECT 
+    p.id_prestamo,
+    p.fecha_prestamo,
+    p.fecha_tope,
+    p.fecha_entrega,
+    c.nombre || ' ' || c.apellido1 AS cliente,
+    pel.titulo,
+    co.formato
+FROM prestamos p
+JOIN clientes c ON p.cod_cliente = c.cod_cliente
+JOIN copias co ON p.n_copia = co.n_copia
+JOIN peliculas pel ON co.id_pelicula = pel.id_pelicula;</sql><current_tab id="0"/></tab_sql></sqlb_project>
