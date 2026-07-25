@@ -31,5 +31,7 @@ public class inputs {
     // Salida con interpolación de texto mediante comodines (%s para String, %d para
     // entero)
     System.out.printf("%s tiene %d años", nombre, edad);
+
+    entrada.close();
   }
 }

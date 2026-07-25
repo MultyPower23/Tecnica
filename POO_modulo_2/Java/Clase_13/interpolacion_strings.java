@@ -1,6 +1,6 @@
 package Tecnica.POO_modulo_2.Java.Clase_13;
 
-public class pruebas_interpolacion {
+public class interpolacion_strings {
   public static void main(String[] args) {
     // ========== SOLO CONSOLA ==========
     // System.out.printf(formato, valores)
