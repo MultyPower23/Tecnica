@@ -34,10 +34,12 @@ public class operadores_matematicos {
           case "2":
             resta = num1 - num2;
             System.out.printf("\nLa resta de %.2f y %.2f es %.2f", num1, num2, resta);
+            break;
 
           case "3":
             multi = num1 * num2;
             System.out.printf("\nLa multiplicación de %.2f por %.2f es %.2f", num1, num2, multi);
+            break;
 
           case "4":
             div = num1 / num2;

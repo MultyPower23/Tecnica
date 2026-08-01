@@ -1,0 +1,80 @@
+{
+  "files.autoSave": "afterDelay",
+  "workbench.startupEditor": "none",
+  "workbench.iconTheme": "material-icon-theme",
+
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+
+  "python.analysis.typeCheckingMode": "standard",
+
+  // ==================== CONFIGURACIONES GENERALES ====================
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.detectIndentation": true,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.inlineSuggest.enabled": true,
+  "files.trimTrailingWhitespace": true,
+
+  // ==================== PYTHON ====================
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true,
+  },
+
+  // ==================== WEB (HTML, CSS, JavaScript, JSON) ====================
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+
+  // ==================== SQL / SQLite ====================
+  "[sql]": {
+    "editor.defaultFormatter": "ReneSaarsoo.sql-formatter-vsc",
+    "editor.formatOnSave": true,
+  },
+  "sql-formatter.dialect": "sqlite",
+  "sql-formatter.keywordCase": "upper",
+  "sql-formatter.dataTypeCase": "upper",
+  "sql-formatter.indent": "    ",
+
+  // SQLite Explorer
+  "sqlite.recordsPerPage": 100,
+  "sqlite.logLevel": "INFO",
+
+  // Asociaciones de archivos
+  "files.associations": {
+    "*.sql": "sql",
+  },
+
+  // ==================== LINTERS ====================
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+  },
+  "redhat.telemetry.enabled": true,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "java": true,
+  },
+  // ==================== JAVA ====================
+  "[java]": {
+      "editor.formatOnSave": true,
+      "editor.defaultFormatter": "redhat.java"
+  },
+
+  // Recomendado: usar google-java-format (estilo limpio y moderno)
+  "java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
+  "java.format.settings.profile": "GoogleStyle"
+}
