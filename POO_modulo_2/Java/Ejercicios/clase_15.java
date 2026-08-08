@@ -37,6 +37,8 @@ public class clase_15 {
     sc.close();
   }
 
+  // ==================================================
+
   public static void positvo_o_negativo(Scanner sc) {
     int num;
     System.out
@@ -55,6 +57,8 @@ public class clase_15 {
     System.out.println("FIN");
   }
 
+  // ==================================================
+
   public static void par_o_impar(Scanner sc) {
     int num;
     System.out.println("Dime números y dire si son pares o impares (ingresa '0' para finalizar)");
@@ -72,6 +76,8 @@ public class clase_15 {
     System.out.println("FIN");
   }
 
+  // ==================================================
+
   public static void contador(Scanner sc) {
     int i = 0, num;
     System.out.println("Dime números y los contare (ingresa un negativo o '0' para finalizar)");
@@ -87,6 +93,8 @@ public class clase_15 {
     System.out.println("Ingresaste " + i + " números positivos");
     System.out.println("FIN");
   }
+
+  // ==================================================
 
   public static void juego(Scanner sc) {
     int i = 0;
@@ -118,6 +126,8 @@ public class clase_15 {
 
     System.out.println("FIN");
   }
+
+  // ==================================================
 
   public static void suma(Scanner sc) {
     int num, sum = 0;
