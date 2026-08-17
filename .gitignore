@@ -1,0 +1,30 @@
+# ==================== PYTHON ====================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+env/
+.venv/
+*.egg-info/
+
+# ==================== JAVA ====================
+*.class
+*.jar
+*.war
+target/
+bin/
+out/
+
+# ==================== BASES DE DATOS ====================
+*.db
+*.sqlite
+*.sqlite3
+
+# ==================== SISTEMA / EDITOR ====================
+.DS_Store
+Thumbs.db
+*.log
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json

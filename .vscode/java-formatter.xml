@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <profiles version="21">
   <profile kind="CodeFormatterProfile" name="MatrixStyle" version="21">
-    <!-- Forzar que los arrays se partan en varias líneas -->
+    <!-- Forzar que los arrays se partan en varias líneas (formato 2D) -->
     <setting id="org.eclipse.jdt.core.formatter.alignment_for_expressions_in_array_initializer" value="48"/>
     <setting id="org.eclipse.jdt.core.formatter.insert_new_line_after_opening_brace_in_array_initializer" value="insert"/>
     <setting id="org.eclipse.jdt.core.formatter.insert_new_line_before_closing_brace_in_array_initializer" value="insert"/>

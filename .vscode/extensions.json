@@ -1,0 +1,13 @@
+{
+  "recommendations": [
+    "pkief.material-icon-theme",
+    "ms-python.python",
+    "ms-python.black-formatter",
+    "esbenp.prettier-vscode",
+    "ReneSaarsoo.sql-formatter-vsc",
+    "alexcvzz.vscode-sqlite",
+    "redhat.java",
+    "vscjava.vscode-java-pack",
+    "GitHub.copilot"
+  ]
+}
