@@ -8,6 +8,8 @@
     "alexcvzz.vscode-sqlite",
     "redhat.java",
     "vscjava.vscode-java-pack",
-    "GitHub.copilot"
+    "GitHub.copilot",
+    "bierner.markdown-preview-github-styles",
+    "bierner.github-markdown-preview"
   ]
 }
