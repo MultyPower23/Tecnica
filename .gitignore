@@ -28,3 +28,7 @@ Thumbs.db
 .vscode/*
 !.vscode/settings.json
 !.vscode/extensions.json
+
+
+# archivo temporal
+claude

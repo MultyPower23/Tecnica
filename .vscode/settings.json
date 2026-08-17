@@ -62,16 +62,22 @@
   "java.format.settings.url": "${workspaceFolder}/.vscode/java-formatter.xml",
   "java.format.settings.profile": "MatrixStyle",
 
+  // ==================== MARKDOWN ====================
+  "[markdown]": {
+    "editor.formatOnSave": true // true activo el formateo
+  },
+
   // ==================== LINTERS ====================
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
   },
 
   "redhat.telemetry.enabled": true,
+  "github.copilot.editor.enableAutoCompletions": true,
   "github.copilot.enable": {
     "*": true,
     "plaintext": false,
-    "markdown": false,
+    "markdown": true,
     "scminput": false,
     "java": true
   }
