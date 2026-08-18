@@ -59,8 +59,8 @@
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "redhat.java"
   },
-  "java.format.settings.url": "${workspaceFolder}/.vscode/java-formatter.xml",
-  "java.format.settings.profile": "MatrixStyle",
+  "java.format.settings.url": "${workspaceFolder}/.vscode/GoogleStyle-Matrix.xml",
+  "java.format.settings.profile": "GoogleStyle-Matrix",
 
   // ==================== MARKDOWN ====================
   "[markdown]": {

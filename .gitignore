@@ -1,4 +1,5 @@
 # ==================== PYTHON ====================
+# Basura de caché/compilación de Python, se regenera sola al ejecutar código.
 __pycache__/
 *.pyc
 *.pyo
@@ -9,6 +10,7 @@ env/
 *.egg-info/
 
 # ==================== JAVA ====================
+# Archivos compilados por el JDK, se regeneran al compilar. Nunca hay que subirlos.
 *.class
 *.jar
 *.war
@@ -17,18 +19,14 @@ bin/
 out/
 
 # ==================== BASES DE DATOS ====================
-*.db
-*.sqlite
-*.sqlite3
+# NOTA: los .db NO se ignoran a propósito, son datos de ejemplo/semilla
+# que sirven como guía y se quieren conservar en el repo.
 
 # ==================== SISTEMA / EDITOR ====================
 .DS_Store
 Thumbs.db
-*.log
-.vscode/*
-!.vscode/settings.json
-!.vscode/extensions.json
+*.log 
 
 
 # archivo temporal
-claude
+claude.md
