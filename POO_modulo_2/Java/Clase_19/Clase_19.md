@@ -1,4 +1,4 @@
-# Java — Clase 15
+# Java — Clase 19
 
 ## Tema central
 Arreglos (arrays), bucles `while`/`do-while`, y los tres algoritmos clásicos de ordenamiento (burbuja, inserción, selección).

@@ -42,13 +42,22 @@ Resumen rápido de qué se vio en cada clase, para buscar sin tener que entrar c
 | [HTML](Bases_modulo_1/HTML/HTML.md) | Un archivo de ejemplo externo (no propio) de simulación de partículas en 3D |
 | Proyecto | Carpeta de proyecto propio (`main.py` + ejemplos de interfaz con Tkinter y `os`) — no se generó recopilatorio por clase porque no es contenido de clase, es un proyecto en desarrollo |
 
+## Desarrollo_Humano
+
+> Mini módulo de 2 clases entre Bases_modulo_1 y POO_modulo_2. Sin notas digitales propias — ver cada resumen para más detalle.
+
+| Clase | Fecha | Tema principal |
+|---|---|---|
+| [Clase_15](Desarrollo_humano/Clase_15/Clase_15.md) | | Cómo responder ante una entrevista, trabajo en equipo (sin notas) |
+| [Clase_16](Desarrollo_humano/Clase_16/Clase_16.md) | | Cómo crear una hoja de vida (notas a mano, sin digitalizar) |
+
 ## POO_modulo_2
 
 ### Java
 | Clase | Fecha | Tema principal |
 |---|---|---|
-| [Clase_13](POO_modulo_2/Java/Clase_13/Clase_13.md) | | Estructura de un programa Java, tipos primitivos, `Scanner`, `JOptionPane`, interpolación de strings |
-| [Clase_14](POO_modulo_2/Java/Clase_14/Clase_14.md) | | Clase `Math`, `switch/case`, operadores lógicos, `.equals()` vs `==`, ternario, incremento/decremento |
-| [Clase_15](POO_modulo_2/Java/Clase_15/Clase_15.md) | | Arreglos, `while` vs `do-while`, algoritmos de ordenamiento (burbuja, inserción, selección) |
-| [Clase_16](POO_modulo_2/Java/Clase_16/Clase_16.md) | | Matrices, matriz traspuesta/simétrica, repaso visual paso a paso de ordenamientos |
-| [Clase_17](POO_modulo_2/Java/Clase_17/Clase_17.md) | | Clases anidadas `static`, métodos de instancia vs. `static`, colas (FIFO) y pilas (LIFO) |
+| [Clase_17](POO_modulo_2/Java/Clase_17/Clase_17.md) | | Estructura de un programa Java, tipos primitivos, `Scanner`, `JOptionPane`, interpolación de strings |
+| [Clase_18](POO_modulo_2/Java/Clase_18/Clase_18.md) | | Clase `Math`, `switch/case`, operadores lógicos, `.equals()` vs `==`, ternario, incremento/decremento |
+| [Clase_19](POO_modulo_2/Java/Clase_19/Clase_19.md) | | Arreglos, `while` vs `do-while`, algoritmos de ordenamiento (burbuja, inserción, selección) |
+| [Clase_20](POO_modulo_2/Java/Clase_20/Clase_20.md) | | Matrices, matriz traspuesta/simétrica, repaso visual paso a paso de ordenamientos |
+| [Clase_21](POO_modulo_2/Java/Clase_21/Clase_21.md) | | Clases anidadas `static`, métodos de instancia vs. `static`, colas (FIFO) y pilas (LIFO) |

@@ -1,4 +1,4 @@
-# Java — Clase 16
+# Java — Clase 20
 
 ## Tema central
 Matrices (arreglos bidimensionales), matriz transpuesta/simétrica, y repaso visual paso a paso de los algoritmos de ordenamiento.

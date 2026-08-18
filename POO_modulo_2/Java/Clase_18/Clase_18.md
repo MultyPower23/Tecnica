@@ -1,4 +1,4 @@
-# Java — Clase 14
+# Java — Clase 18
 
 ## Tema central
 Clase `Math`, operadores lógicos/relacionales, condicionales, operador ternario y operadores matemáticos/incrementales.

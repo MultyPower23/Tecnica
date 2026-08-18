@@ -1,4 +1,4 @@
-# Java — Clase 13
+# Java — Clase 17
 
 ## Tema central
 Primeros pasos en Java: estructura de un programa, tipos primitivos, entrada de datos por consola y por ventanas, e interpolación de strings.
