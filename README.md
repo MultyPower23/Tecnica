@@ -8,7 +8,7 @@ El repositorio está organizado por **módulo → materia → clase**, con numer
 
 ```
 Tecnica/
-├── Bases_modulo_1/
+├── 01_Bases/
 │   ├── PSeInt/
 │   │   ├── Clase_1/
 │   │   └── Clase_2/
@@ -21,11 +21,11 @@ Tecnica/
 │   ├── HTML/            # sin división por clase, material de referencia
 │   └── Proyecto/        # proyecto propio del módulo
 │
-├── Desarrollo_Humano/   # mini módulo intermedio (entrevista, trabajo en equipo, hoja de vida)
+├── 02_Desarrollo_Humano/   # mini módulo intermedio (entrevista, trabajo en equipo, hoja de vida)
 │   ├── Clase_15/
 │   └── Clase_16/
 │
-├── POO_modulo_2/
+├── 03_POO/
 │   └── Java/
 │       ├── Clase_17/ ... Clase_21/
 │       └── Ejercicios/  # entregable acumulado del módulo (ver abajo)
