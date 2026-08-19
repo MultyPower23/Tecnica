@@ -40,7 +40,7 @@ Resumen rápido de qué se vio en cada clase, para buscar sin tener que entrar c
 | Carpeta | Contenido |
 |---|---|
 | [HTML](01_Bases/HTML/HTML.md) | Un archivo de ejemplo externo (no propio) de simulación de partículas en 3D |
-| Proyecto | Carpeta de proyecto propio (`main.py` + ejemplos de interfaz con Tkinter y `os`) — no se generó recopilatorio por clase porque no es contenido de clase, es un proyecto en desarrollo |
+| Ejemplos_Interfaz | Ejemplos sueltos de Python (Tkinter, `os`, `sqlite3`) rescatados de un proyecto abandonado — sin recopilatorio, no es contenido de clase |
 
 ## 02_Desarrollo_Humano
 
