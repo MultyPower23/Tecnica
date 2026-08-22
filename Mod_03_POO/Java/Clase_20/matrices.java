@@ -14,18 +14,7 @@ public class matrices {
 
     // ====================================
 
-    int[][] matriz1 =
-    {
-        {
-            1, 2, 3
-        },
-        {
-            4, 5, 6
-        },
-        {
-            7, 8, 9
-        }
-    };
+    int[][] matriz1 = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
     for (int i = 0; i < matriz1.length; i++) {
       for (int j = 0; j < matriz1[i].length; j++) {
         System.out.print(matriz1[i][j] + " ");

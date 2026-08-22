@@ -28,8 +28,7 @@ public class interpolacion_strings {
     // ----- BOOLEAN (%b) -----
     int cantidad = 10;
     boolean mayor = cantidad > 5;
-    String resultado3 = String.format("La cantidad es mayor a %d : %b",
-        cantidad, mayor);
+    String resultado3 = String.format("La cantidad es mayor a %d : %b", cantidad, mayor);
     System.out.println(resultado3);
 
     // ========== ORDEN ==========
@@ -40,8 +39,7 @@ public class interpolacion_strings {
     String uno = "Uno";
     String dos = "Dos";
     String tres = "Tres";
-    String resultado4 = String.format("%3$s - %2$s - %1$s",
-        uno, dos, tres);
+    String resultado4 = String.format("%3$s - %2$s - %1$s", uno, dos, tres);
     System.out.println(resultado4);
 
     String resultado5 = String.format("%1f - Decimales: %1$.2f", pi, pi);

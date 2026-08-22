@@ -27,7 +27,8 @@ public class LIFO {
     platos.push("PLATO5"); // este queda arriba de todo
 
     System.out.println("Pila de platos");
-    System.out.println(platos); // se imprime en orden de insercion, pero el que "sale" primero es PLATO5
+    System.out.println(platos); // se imprime en orden de insercion, pero el que "sale" primero es
+                                // PLATO5
   }
 
   public static void historial() {

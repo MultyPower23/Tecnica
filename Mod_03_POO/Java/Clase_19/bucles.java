@@ -52,8 +52,7 @@ public class bucles {
                                     // Java!
       {
         System.out.println("Contraseña incorrecta");
-      }
-      ;
+      } ;
 
     } while (!password.equals("hola"));
     // Aquí el 'while' pregunta: "¿El usuario metió algo que NO es 'hola'?"

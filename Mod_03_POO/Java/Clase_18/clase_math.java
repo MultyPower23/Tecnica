@@ -19,7 +19,7 @@ public class clase_math {
     // ----- POTENCIA -----
     // Math.pow(base,indice)
     double base2 = 3, indice = 3;
-    double potencia = Math.pow(base2,indice);
+    double potencia = Math.pow(base2, indice);
     System.out.printf("\nLa potencia de %.2f elvado a 3 es %.2f", base2, potencia);
 
     // ----- REDONDEO -----
@@ -27,11 +27,11 @@ public class clase_math {
     // double
     final double pi = 3.14159265359;
     double redondeadoD = Math.round(pi);
-    System.out.printf("\nEl redondeo de %f es %.2f", pi,redondeadoD);
+    System.out.printf("\nEl redondeo de %f es %.2f", pi, redondeadoD);
     // float
     float numero1 = 23.09f;
     double redondeadoF = Math.round(numero1);
-    System.out.printf("\nEl redondeo de %f es %.2f", numero1,redondeadoF);
+    System.out.printf("\nEl redondeo de %f es %.2f", numero1, redondeadoF);
 
     // ----- RANDOM -----
     double random1 = Math.random(); // solo genera entre 0 y 1 sin incluir a estos

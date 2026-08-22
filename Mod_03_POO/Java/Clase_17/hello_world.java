@@ -1,7 +1,8 @@
 // 1. LA UBICACIÓN: Le dice a Java en qué "carpeta" o "paquete" está guardado este archivo.
 package Mod_03_POO.Java.Clase_17;
 
-// 2. EL CONTENEDOR (CLASE): Todo en Java debe vivir dentro de una "clase". Es el cascarón de nuestro código.
+// 2. EL CONTENEDOR (CLASE): Todo en Java debe vivir dentro de una "clase". Es el cascarón de
+// nuestro código.
 public class hello_world {
 
   // 3. EL PUNTO DE ARRANQUE (MÉTODO MAIN): Es el motor. Sin esto, el programa no
@@ -32,5 +33,5 @@ public class hello_world {
     System.out.println(pi);
 
   } // Cierra el método main
- 
+
 } // Cierra la clase hello_world

@@ -8,10 +8,7 @@ public class rof {
 
     System.out.println();
 
-    String[] nombre =
-    {
-        "Papu", "Jerozadi", "LM", "Toro", "Acehuevo", "Saduva", "Ranger", "Shairo"
-    };
+    String[] nombre = {"Papu", "Jerozadi", "LM", "Toro", "Acehuevo", "Saduva", "Ranger", "Shairo"};
     for (int i = 0; i < nombre.length; i++) {
       System.out.println("Hola " + nombre[i]);
     }
