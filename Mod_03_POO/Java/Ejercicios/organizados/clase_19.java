@@ -1,4 +1,4 @@
-package Mod_03_POO.Java.Ejercicios;
+package Mod_03_POO.Java.Ejercicios.organizados;
 
 import java.util.Scanner;
 import javax.swing.JOptionPane;
@@ -16,23 +16,23 @@ public class clase_19 {
     System.out.print("Opción: ");
 
     switch (sc.nextByte()) {
-    case 1:
-      positvo_o_negativo(sc);
-      break;
-    case 2:
-      par_o_impar(sc);
-      break;
-    case 3:
-      contador(sc);
-      break;
-    case 4:
-      juego(sc);
-      break;
-    case 5:
-      suma(sc);
-      break;
-    default:
-      System.out.println("Opción inválida");
+      case 1:
+        positvo_o_negativo(sc);
+        break;
+      case 2:
+        par_o_impar(sc);
+        break;
+      case 3:
+        contador(sc);
+        break;
+      case 4:
+        juego(sc);
+        break;
+      case 5:
+        suma(sc);
+        break;
+      default:
+        System.out.println("Opción inválida");
     }
     sc.close();
   }

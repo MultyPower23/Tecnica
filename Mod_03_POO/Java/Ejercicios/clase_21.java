@@ -38,7 +38,8 @@ public class clase_21 {
     public void creacion() {
       modelo = JOptionPane.showInputDialog("Ingrese el modelo de la moto: ");
       marca = JOptionPane.showInputDialog("Ingrese la marca de la moto: ");
-      velMax = Short.parseShort(JOptionPane.showInputDialog("Ingrese la velocidad maxima de la moto: "));
+      velMax =
+          Short.parseShort(JOptionPane.showInputDialog("Ingrese la velocidad maxima de la moto: "));
     }
 
     public void mostrar() {
@@ -79,7 +80,8 @@ public class clase_21 {
       }
 
       if (velActual + velocidad < velMax) {
-        System.out.println("Acelerando de " + velActual + "km/h hasta " + (velActual + velocidad) + "km/h");
+        System.out.println(
+            "Acelerando de " + velActual + "km/h hasta " + (velActual + velocidad) + "km/h");
         velActual = (short) (velActual + velocidad);
       } else {
         velActual = velMax;
@@ -94,7 +96,8 @@ public class clase_21 {
       }
 
       if (velActual - velocidad > 0) {
-        System.out.println("Frenando desde " + velActual + "km/h hasta " + (velActual - velocidad) + "km/h");
+        System.out.println(
+            "Frenando desde " + velActual + "km/h hasta " + (velActual - velocidad) + "km/h");
         velActual = (short) (velActual - velocidad);
       } else {
         velActual = 0;

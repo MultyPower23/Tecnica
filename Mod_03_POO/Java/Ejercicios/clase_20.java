@@ -8,9 +8,9 @@ public class clase_20 {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
 
-    // traspuesta(sc);
-    // simetrica(sc);
-    // binario(sc);
+    traspuesta(sc);
+    simetrica(sc);
+    binario(sc);
     suma(sc);
     marco(sc);
 
