@@ -1,4 +1,4 @@
-package Tecnica.Mod_03_POO.Java.Clase_17;
+package Mod_03_POO.Java.Clase_17;
 
 public class interpolacion_strings {
   public static void main(String[] args) {

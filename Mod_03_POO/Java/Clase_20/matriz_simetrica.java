@@ -1,4 +1,4 @@
-package Tecnica.Mod_03_POO.Java.Clase_20;
+package Mod_03_POO.Java.Clase_20;
 
 import java.util.Scanner;
 

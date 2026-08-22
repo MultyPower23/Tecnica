@@ -1,4 +1,4 @@
-package Tecnica.Mod_03_POO.Java.Clase_21;
+package Mod_03_POO.Java.Clase_21;
 
 public class POO_Parametros {
   public static void main(String[] args) {

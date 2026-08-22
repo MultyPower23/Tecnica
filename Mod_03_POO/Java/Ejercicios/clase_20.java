@@ -1,10 +1,10 @@
-package Tecnica.Mod_03_POO.Java.Ejercicios;
+package Mod_03_POO.Java.Ejercicios;
 
 import java.util.Scanner;
 
 import javax.swing.JOptionPane;
 
-public class clase_16 {
+public class clase_20 {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
 
@@ -21,8 +21,7 @@ public class clase_16 {
 
   public static void traspuesta(Scanner sc) {
     /*
-     * Cambiar las filas por las
-     * columnas de una matriz
+     * Cambiar las filas por las columnas de una matriz
      */
 
     int nFilas, nColumnas, matrizA[][], matrizB[][];
@@ -72,9 +71,7 @@ public class clase_16 {
 
   public static void simetrica(Scanner sc) {
     /*
-     * Verificar si una
-     * matriz es simetrica
-     * (igual a su traspuesta)
+     * Verificar si una matriz es simetrica (igual a su traspuesta)
      */
     int nFilas, nColumnas, matrizA[][], matrizB[][];
     boolean cuadrada, esSimetrica;
@@ -153,12 +150,8 @@ public class clase_16 {
 
   public static void binario(Scanner sc) {
     /*
-     * Crear una matriz de
-     * tamaño 7 x 7, rellenarla
-     * de forma que los
-     * elementos de la diagonal
-     * principal sean 1 y el resto
-     * 0.
+     * Crear una matriz de tamaño 7 x 7, rellenarla de forma que los elementos de la
+     * diagonal principal sean 1 y el resto 0.
      */
 
     byte bi, diagonal[][] = new byte[7][7];
@@ -186,9 +179,7 @@ public class clase_16 {
   public static void suma(Scanner sc) {
 
     /*
-     * Crear y cargar una matriz
-     * de tamaño n x m, mostrar
-     * la suma de cada fila y de
+     * Crear y cargar una matriz de tamaño n x m, mostrar la suma de cada fila y de
      * cada columna
      */
 
@@ -255,13 +246,9 @@ public class clase_16 {
 
   public static void marco(Scanner sc) {
     /*
-     * Crear una matriz “marco” de
-     * tamaño 6 x 6 : todos sus
-     * elementos deben ser cero a
-     * excepción de los elementos
-     * que se encuentran en el borde,
-     * estos deben de ser 1. y
-     * mostrar en consola
+     * Crear una matriz “marco” de tamaño 6 x 6 : todos sus elementos deben ser cero
+     * a excepción de los elementos que se encuentran en el borde, estos deben de
+     * ser 1. y mostrar en consola
      */
 
     int matriz[][] = new int[6][6];

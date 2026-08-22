@@ -25,8 +25,9 @@ out/
 # ==================== SISTEMA / EDITOR ====================
 .DS_Store
 Thumbs.db
-*.log 
+*.log
 
 
 # archivo temporal
 claude.md
+*.sh

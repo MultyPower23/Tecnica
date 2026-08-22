@@ -1,8 +1,8 @@
-package Tecnica.Mod_03_POO.Java.Ejercicios;
+package Mod_03_POO.Java.Ejercicios;
 
 import java.util.Scanner;
 
-public class clase_14 {
+public class clase_18 {
 
   public static void main(String[] args) {
     Scanner entrada = new Scanner(System.in);
@@ -13,41 +13,41 @@ public class clase_14 {
     System.out.print(": ");
 
     switch (entrada.next()) {
-      case "1":
-        ejercicio1(entrada);
-        break;
+    case "1":
+      ejercicio1(entrada);
+      break;
 
-      case "2":
-        ejercicio2(entrada);
-        break;
+    case "2":
+      ejercicio2(entrada);
+      break;
 
-      case "3":
-        ejercicio3(entrada);
-        break;
+    case "3":
+      ejercicio3(entrada);
+      break;
 
-      case "4":
-        ejercicio4(entrada);
-        break;
+    case "4":
+      ejercicio4(entrada);
+      break;
 
-      case "5":
-        ejercicio5(entrada);
-        break;
+    case "5":
+      ejercicio5(entrada);
+      break;
 
-      case "6":
-        ejercicio6(entrada);
-        break;
+    case "6":
+      ejercicio6(entrada);
+      break;
 
-      case "7":
-        ejercicio7(entrada);
-        break;
+    case "7":
+      ejercicio7(entrada);
+      break;
 
-      case "8":
-        ejercicio8(entrada);
-        break;
+    case "8":
+      ejercicio8(entrada);
+      break;
 
-      default:
-        System.out.println("No esta ese ejercicio, vuelva a intentar");
-        break;
+    default:
+      System.out.println("No esta ese ejercicio, vuelva a intentar");
+      break;
     }
 
     entrada.close();
@@ -59,10 +59,9 @@ public class clase_14 {
     System.out.println("\n-----------------------");
 
     /*
-     * Hacer un programa que calcule e imprima
-     * la suma de tres calificaciones.
-     * • Pedir las 3 calificaciones,
-     * • Imprimir por consola la suma de las 3 calificaciones
+     * Hacer un programa que calcule e imprima la suma de tres calificaciones. •
+     * Pedir las 3 calificaciones, • Imprimir por consola la suma de las 3
+     * calificaciones
      */
 
     double nota = 0.0, total = 0.0;
@@ -83,9 +82,8 @@ public class clase_14 {
     System.out.println("\n-----------------------");
 
     /*
-     * Hacer un programa que calcule e imprima el salario
-     * semanal de un empleado a partir de sus horas semanales
-     * trabajadas y de su salario por hora
+     * Hacer un programa que calcule e imprima el salario semanal de un empleado a
+     * partir de sus horas semanales trabajadas y de su salario por hora
      */
 
     double horas_semana, salario_hora, paga_semanas;
@@ -107,11 +105,9 @@ public class clase_14 {
     System.out.println("\n-----------------------");
 
     /*
-     * Guillermo tiene N pesos. Luis tiene la mitad de lo que
-     * posee Guillermo.
-     * Juan tiene la mitad de lo que posee Luis y Guillermo
-     * juntos. Hacer un programa que calcule e imprima la
-     * cantidad de dinero que tiene los tres.
+     * Guillermo tiene N pesos. Luis tiene la mitad de lo que posee Guillermo. Juan
+     * tiene la mitad de lo que posee Luis y Guillermo juntos. Hacer un programa que
+     * calcule e imprima la cantidad de dinero que tiene los tres.
      */
 
     double G;
@@ -159,14 +155,12 @@ public class clase_14 {
     System.out.println("\n-----------------------");
 
     /*
-     * La calificación final de un estudiante de informática se
-     * calcula con base a las calificaciones de cuatro aspectos
-     * de su rendimiento académico: participación, primer
-     * examen parcial, segundo examen parcial y examen final,
-     * Sabiendo que las calificaciones anteriores entran en la
-     * calificación final con ponderaciones del 10% 25% 25% y
-     * 40%. Hacer un programa que calcule e imprima la
-     * calificación final obtenida por un estudiante.
+     * La calificación final de un estudiante de informática se calcula con base a
+     * las calificaciones de cuatro aspectos de su rendimiento académico:
+     * participación, primer examen parcial, segundo examen parcial y examen final,
+     * Sabiendo que las calificaciones anteriores entran en la calificación final
+     * con ponderaciones del 10% 25% 25% y 40%. Hacer un programa que calcule e
+     * imprima la calificación final obtenida por un estudiante.
      */
 
     float porc_1 = 0.1f, porc_2 = 0.25f, porc_3 = 0.25f, porc_4 = 0.40f;
@@ -230,10 +224,9 @@ public class clase_14 {
     System.out.println("\n-----------------------");
 
     /*
-     * Construir un programa que, dado un numero total de
-     * horas, devuelve el numero de semanas, días, y horas
-     * equivalentes, por ejemplo, dado un total de 1000 horas
-     * debe mostrar 5 semanas, 6 días y 16 horas.
+     * Construir un programa que, dado un numero total de horas, devuelve el numero
+     * de semanas, días, y horas equivalentes, por ejemplo, dado un total de 1000
+     * horas debe mostrar 5 semanas, 6 días y 16 horas.
      */
 
     int tiempo, semanas, dias, horas_restantes;
@@ -255,9 +248,8 @@ public class clase_14 {
     System.out.println("\n-----------------------");
 
     /*
-     * Hacer un programa que calcule y muestre por pantalla las
-     * raíces de la ecuación de segundo grado de coeficientes
-     * reales
+     * Hacer un programa que calcule y muestre por pantalla las raíces de la
+     * ecuación de segundo grado de coeficientes reales
      */
 
     double a2, b2, c2, raiz, x1, x2;

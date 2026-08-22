@@ -1,4 +1,4 @@
-package Tecnica.Mod_03_POO.Java.Clase_18;
+package Mod_03_POO.Java.Clase_18;
 
 import javax.swing.JOptionPane;
 

@@ -1,4 +1,4 @@
-package Tecnica.Mod_03_POO.Java.Clase_18;
+package Mod_03_POO.Java.Clase_18;
 
 public class clase_math {
   public static void main(String[] args) {

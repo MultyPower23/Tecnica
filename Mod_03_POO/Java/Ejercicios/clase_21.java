@@ -1,8 +1,8 @@
-package Tecnica.Mod_03_POO.Java.Ejercicios;
+package Mod_03_POO.Java.Ejercicios;
 
 import javax.swing.JOptionPane;
 
-public class clase_17 {
+public class clase_21 {
   public static void main(String[] args) {
     // === Moto ===
     Moto moto1 = new Moto();

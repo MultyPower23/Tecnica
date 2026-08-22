@@ -1,4 +1,4 @@
-package Tecnica.Mod_03_POO.Java.Clase_19;
+package Mod_03_POO.Java.Clase_19;
 
 public class arreglos {
   public static void main(String[] args) {

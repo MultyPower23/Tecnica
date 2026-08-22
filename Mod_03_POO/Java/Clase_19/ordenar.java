@@ -1,9 +1,12 @@
-package Tecnica.Mod_03_POO.Java.Clase_19;
+package Mod_03_POO.Java.Clase_19;
 
 public class ordenar {
 
   public static void main(String[] args) {
-    byte vector[] = {4, 6, 5, 3, 2, 1};
+    byte vector[] =
+    {
+        4, 6, 5, 3, 2, 1
+    };
 
     // METODO BURBUJA
     burbuja(vector.clone());
