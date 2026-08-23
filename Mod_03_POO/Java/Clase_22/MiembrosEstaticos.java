@@ -54,17 +54,19 @@ public class MiembrosEstaticos {
     // Cada persona tiene su propio nombre (atributo de instancia)
     System.out.println(persona1.getNombre()); // Laura
     System.out.println(persona2.getNombre()); // Andrés
+    System.out.println(persona3.getNombre()); // Camilo
 
     // Pero el contador es UNO SOLO para las tres, por eso ya marca 3 sin
     // importar desde qué objeto lo consultes (o directo desde la clase):
     System.out.println("Objetos creados en total: " + MiembrosEstaticos.getContadorDeObjetos()); // 3
-    System.out.println("Mismo dato visto desde persona3: " + persona3.getContadorDeObjetos()); // 3
-                                                                                               // (aunque
-                                                                                               // se
-                                                                                               // ve
-                                                                                               // raro
-                                                                                               // usarlo
-                                                                                               // así)
+    System.out
+        .println("Mismo dato visto desde persona3: " + MiembrosEstaticos.getContadorDeObjetos()); // 3
+                                                                                                  // (aunque
+                                                                                                  // se
+                                                                                                  // ve
+                                                                                                  // raro
+                                                                                                  // usarlo
+                                                                                                  // así)
   }
 }
 
