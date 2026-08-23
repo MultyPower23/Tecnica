@@ -1,9 +1,15 @@
-package Mod_03_POO.Java.Ejercicios.clase_22;
+package Mod_03_POO.Java.Ejercicios.ejercicio41;
 
 import javax.swing.JOptionPane;
 
-public class personaje {
+public class Main {
   public static void main(String[] args) {
+    // Construir un programa que permita dirigir el movimiento de un objeto
+    // dentro de un tablero y actualice su posicion dentro del mismo.
+    // Los movimientos posibles son ARRIBA, ABAJO, DERECHA, IZQUIERDA.
+    // Tras cada movimiento el programa mostrar la nueva direccion elegida y las
+    // coordenadas de situacion del objeto dentro del tablero.
+
 
     Tablero p1 = new Tablero((byte) 0, (byte) 0);
     JOptionPane.showMessageDialog(null, "Coordenadas iniciales: " + p1.getCoords() + " (x, y)");

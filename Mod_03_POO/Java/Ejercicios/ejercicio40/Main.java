@@ -1,9 +1,12 @@
-package Mod_03_POO.Java.Ejercicios.clase_22;
+package Mod_03_POO.Java.Ejercicios.ejercicio40;
 
 import javax.swing.JOptionPane;
 
 public class Main {
   public static void main(String[] args) {
+    // Programa que calcule el área y el perímetro de un cuadrilátero
+    // dada la longitud de sus dos lados.
+
     Cuadrilatero c1;
     float lado1, lado2;
 

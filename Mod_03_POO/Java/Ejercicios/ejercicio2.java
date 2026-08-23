@@ -4,13 +4,9 @@ import java.util.Scanner;
 
 public class ejercicio2 {
   public static void main(String[] args) {
-    /*Leer un numero e indicar
-    si par o impar . El
-    proceso se repetirá hasta
-    que se introduzca un
-    cero (0)
-    */
-    
+    // Leer un numero e indicar si par o impar.
+    // El proceso se repetirá hasta que se introduzca un cero (0).
+
     Scanner sc = new Scanner(System.in);
     int num;
     System.out.println("Dime números y dire si son pares o impares (ingresa '0' para finalizar)");

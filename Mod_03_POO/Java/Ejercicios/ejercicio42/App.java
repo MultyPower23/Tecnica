@@ -1,4 +1,4 @@
-package Mod_03_POO.Java.Ejercicios.clase_22.ejercicio42;
+package Mod_03_POO.Java.Ejercicios.ejercicio42;
 
 public class App {
   public static void main(String[] args) {

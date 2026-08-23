@@ -4,11 +4,8 @@ import java.util.Scanner;
 
 public class ejercicio3 {
   public static void main(String[] args) {
-    /* Pedir numeros hasta que
-    se teclee uno negativo, y
-    mostrar cuanto numero se
-    ha introducido
-    */
+    // Pedir numeros hasta que se teclee uno negativo,
+    // y mostrar cuanto numero se ha introducido.
 
     Scanner sc = new Scanner(System.in);
     int i = 0, num;

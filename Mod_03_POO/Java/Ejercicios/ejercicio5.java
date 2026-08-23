@@ -4,12 +4,8 @@ import java.util.Scanner;
 
 public class ejercicio5 {
   public static void main(String[] args) {
-    /* Pedir números hasta
-    que se teclee un 0,
-    mostrar la suma de
-    todos los números
-    introducidos
-    */
+    // Pedir números hasta que se teclee un 0,
+    // mostrar la suma de todos los números introducidos.
 
     Scanner sc = new Scanner(System.in);
     int num, sum = 0;

@@ -4,17 +4,10 @@ import javax.swing.JOptionPane;
 
 public class ejercicio4 {
   public static void main(String[] args) {
-    /* Realizar un juego para
-    adivinar un número. Para
-    ello generar un numero
-    aleatorio entre 0 y 100, y
-    luego ir pidiendo números
-    indicando si es mayor o
-    menor con respecto a X. el
-    proceso termina cuando el
-    usuario acierta y mostrar
-    el número de intentos
-    */
+    // Realizar un juego para adivinar un número.
+    // Para ello generar un numero aleatorio entre 0 y 100,
+    // y luego ir pidiendo números indicando si es mayor o menor con respecto a X.
+    // El proceso termina cuando el usuario acierta y mostrar el número de intentos.
 
     int i = 0;
     final byte NUM = (byte) ((Math.random() * (100 - 1 + 1)) + 1);

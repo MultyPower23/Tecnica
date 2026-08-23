@@ -1,4 +1,4 @@
-package Mod_03_POO.Java.Ejercicios.clase_22;
+package Mod_03_POO.Java.Ejercicios.ejercicio40;
 
 public class Cuadrilatero {
   private float lado1;

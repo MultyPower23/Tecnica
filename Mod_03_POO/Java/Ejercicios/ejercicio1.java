@@ -4,12 +4,8 @@ import java.util.Scanner;
 
 public class ejercicio1 {
   public static void main(String[] args) {
-    /* Leer un numero e indicar
-    si es positivo o negativo.
-    El proceso se repetirá
-    hasta que se introduzca
-    un cero (0)
-    */
+    // Leer un numero e indicar si es positivo o negativo.
+    // El proceso se repetirá hasta que se introduzca un cero (0).
 
     Scanner sc = new Scanner(System.in);
     int num;

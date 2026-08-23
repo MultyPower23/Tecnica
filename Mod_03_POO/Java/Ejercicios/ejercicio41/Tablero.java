@@ -1,4 +1,4 @@
-package Mod_03_POO.Java.Ejercicios.clase_22;
+package Mod_03_POO.Java.Ejercicios.ejercicio41;
 
 public class Tablero {
   private byte x;

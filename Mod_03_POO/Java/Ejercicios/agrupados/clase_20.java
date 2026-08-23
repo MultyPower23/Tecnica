@@ -1,4 +1,4 @@
-package Mod_03_POO.Java.Ejercicios;
+package Mod_03_POO.Java.Ejercicios.agrupados;
 
 import java.util.Scanner;
 
@@ -185,10 +185,8 @@ public class clase_20 {
 
     int filas, columnas, matriz[][];
 
-    filas = Integer.parseInt(
-        JOptionPane.showInputDialog("Ingrese el número de filas:"));
-    columnas = Integer.parseInt(
-        JOptionPane.showInputDialog("Ingrese el número de columnas:"));
+    filas = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el número de filas:"));
+    columnas = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el número de columnas:"));
     matriz = new int[filas + 2][columnas + 2];
 
     // RELLENAR MATRIZ

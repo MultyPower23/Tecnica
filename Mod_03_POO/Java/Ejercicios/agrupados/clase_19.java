@@ -1,4 +1,4 @@
-package Mod_03_POO.Java.Ejercicios.organizados;
+package Mod_03_POO.Java.Ejercicios.agrupados;
 
 import java.util.Scanner;
 import javax.swing.JOptionPane;
