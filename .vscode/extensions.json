@@ -9,6 +9,7 @@
     "redhat.java",
     "vscjava.vscode-java-pack",
     "bierner.markdown-preview-github-styles",
-    "bierner.github-markdown-preview"
+    "bierner.github-markdown-preview",
+    "DavidAnson.vscode-markdownlint"
   ]
 }

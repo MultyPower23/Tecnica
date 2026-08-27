@@ -1,9 +1,11 @@
 # Java — Clase 20
 
 ## Tema central
+
 Matrices (arreglos bidimensionales), matriz transpuesta/simétrica, y repaso visual paso a paso de los algoritmos de ordenamiento.
 
 ## Qué se vio
+
 - **Matrices (`int[][]`)**: un arreglo de arreglos, representando filas y columnas. Declaración con `new int[filas][columnas]` y recorrido con doble `for` anidado.
 - **Llenado dinámico de una matriz** pidiendo filas/columnas al usuario y capturando cada valor.
 - **Matriz cuadrada**: verificar si el número de filas es igual al de columnas.
@@ -14,9 +16,11 @@ Matrices (arreglos bidimensionales), matriz transpuesta/simétrica, y repaso vis
 - **Sobrecarga de métodos**: dos versiones de `imprimirEstado()`, una con color por defecto y otra donde se puede especificar el color.
 
 ## Archivos de referencia
+
 `matrices.java`, `matriz_simetrica.java`, `OrdenarVisual.java`, `repaso_ordenamientos.java`
 
 ## Ideas clave
+
 - 🔲 Una matriz es un arreglo de arreglos: `matriz[fila][columna]`.
 - 🔄 La traspuesta intercambia filas por columnas; si una matriz cuadrada es igual a su traspuesta, es simétrica.
 - 🎨 Los códigos ANSI pintan la consola de colores, pero siempre hay que resetear (`RESET`) después de usarlos.

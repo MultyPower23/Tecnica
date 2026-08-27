@@ -1,6 +1,6 @@
 # Clase 16 — Cómo armar la hoja de vida (parte 3: errores a evitar y presentación personal)
 
-> Continuación de los apuntes reconstruidos a partir de las fotos de la presentación. Se mencionó un video de referencia: https://www.youtube.com/watch?v=4mm47F0YiLI
+> Continuación de los apuntes reconstruidos a partir de las fotos de la presentación. Se mencionó un video de referencia: <https://www.youtube.com/watch?v=4mm47F0YiLI>
 
 ## Errores fatales a evitar
 

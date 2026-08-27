@@ -1,9 +1,11 @@
 # Java — Clase 21
 
 ## Tema central
+
 POO aplicada dentro de un mismo archivo (clases anidadas `static`), métodos de instancia vs. métodos estáticos, repaso de funciones, y estructuras lineales (pilas y colas).
 
 ## Qué se vio
+
 - **Clases anidadas (`public static class X`)**: se puede definir una clase "molde" dentro de otra clase, y luego instanciarla con `new` para crear objetos reales con sus propios datos (ej. `Carro`, `ParejaIntegers`).
 - **Atributos vs. instancias**: cada objeto creado con `new` guarda sus propios valores, aunque comparta el mismo molde (dos carros con distinto color/marca/km).
 - **Métodos de instancia**: métodos que trabajan directamente con los atributos guardados dentro del objeto (no reciben esos datos por parámetro, ya los tienen adentro), llamados en cadena paso a paso sobre un mismo objeto (`leerNumero()` → `sumar()` → `mostrar()`...).
@@ -13,6 +15,7 @@ POO aplicada dentro de un mismo archivo (clases anidadas `static`), métodos de 
 - **Pilas (`Stack`) — LIFO** (*Last In, First Out*): el último que entra es el primero que sale. Métodos: `push()` (insertar), `pop()` (sacar el de la cima), `peek()` (consultar sin sacar). Comparado con apilar platos o el botón "atrás" del navegador.
 
 ## Ejercicios trabajados
+
 - Simulación de una moto con estado (prendida/apagada, velocidad actual/máxima) controlada por métodos que validan reglas antes de actuar (ej. no acelerar si el motor está apagado).
 - Simulación de un mouse y de un fármaco con lógica similar de creación, estado y acciones (comprar/vender).
 - Calculadora con objeto (`ParejaIntegers`) usando métodos de instancia que leen datos por `JOptionPane` y calculan suma/resta/multiplicación/división.
@@ -21,6 +24,7 @@ POO aplicada dentro de un mismo archivo (clases anidadas `static`), métodos de 
 - Pila de platos e historial de navegador (LIFO).
 
 ## Ideas clave
+
 - 🏭 Una clase anidada `static` es un molde local: cada `new` crea un objeto independiente con sus propios datos.
 - 🔧 Método de instancia = usa los datos que ya tiene guardados el objeto; método `static` = recibe todo por parámetro y no necesita `new`.
 - 🚶 Cola (FIFO): el primero que llega es el primero que se va — justo como una fila real.

@@ -1,9 +1,11 @@
 # Python — Clase 10
 
 ## Tema central
+
 Introducción a la Programación Orientada a Objetos (POO): clases, atributos, métodos, constructor, encapsulamiento y herencia. También diccionarios a fondo.
 
 ## Qué se vio
+
 - **Clases y objetos**: una clase es un "molde" para crear múltiples objetos (instancias) sin repetir código; se comparó con fabricar coches en serie en vez de programar cada uno a mano.
 - **Atributos, métodos y estado**: propiedades (variables), comportamientos (funciones) y el estado actual del objeto.
 - **`self`**: referencia al propio objeto/instancia, necesaria para leer o modificar sus datos internos.
@@ -15,6 +17,7 @@ Introducción a la Programación Orientada a Objetos (POO): clases, atributos, m
 - **`defaultdict`**: variante de diccionario que evita comprobar si una clave existe antes de sumar/agregar.
 
 ## Ejercicios trabajados
+
 - Clase `Coche` con atributos públicos y comportamiento (arrancar/estado).
 - Clase `Coche2` con constructor y atributos privados.
 - Herencia: `Vehiculos` → `Moto`, sobrescribiendo el método `estado()` y usando `super()`.
@@ -23,6 +26,7 @@ Introducción a la Programación Orientada a Objetos (POO): clases, atributos, m
 - Contador de palabras en un texto usando diccionarios (`.get()` y `defaultdict`).
 
 ## Ideas clave
+
 - 🏭 Una clase es un molde: cada objeto creado con ella es independiente y editable sin afectar a los demás.
 - 🔒 El doble guion bajo (`__atributo`) hace privado un dato, solo tocable desde dentro de la clase.
 - 🧬 La herencia evita repetir código: la clase hija reutiliza todo lo del padre y solo agrega o cambia lo que necesita.

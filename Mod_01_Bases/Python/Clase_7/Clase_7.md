@@ -1,9 +1,11 @@
 # Python — Clase 7
 
 ## Tema central
+
 Profundización en `for`, `range()` y `len()`, más una batería grande de ejercicios prácticos con `import random`.
 
 ## Qué se vio
+
 - **`range(inicio, fin, paso)`** explicado a fondo: siempre excluye el valor final, por defecto empieza en 0 y avanza de 1 en 1.
 - **`len()`**: obtiene la longitud de listas o strings, útil combinado con `range(len(lista))` para recorrer por índice.
 - **`end=" "`** en `print()` para controlar qué se imprime al final en lugar de saltar de línea.
@@ -12,6 +14,7 @@ Profundización en `for`, `range()` y `len()`, más una batería grande de ejerc
 - Patrón de menú con `match/case` para probar múltiples ejercicios desde un mismo archivo.
 
 ## Ejercicios trabajados
+
 - Contar apariciones de una letra en una palabra.
 - Sumar una lista de números ingresados por el usuario.
 - Tabla de multiplicar del 5.
@@ -29,6 +32,7 @@ Profundización en `for`, `range()` y `len()`, más una batería grande de ejerc
 - "Multiplicador de gritos" (repetición creciente de un carácter).
 
 ## Ideas clave
+
 - 📏 `range(a, b, paso)` nunca incluye `b`.
 - 📐 `len()` + `range()` es la combinación clásica para recorrer por índice.
 - 📦 `import` va arriba del archivo para no repetir la carga de la librería.

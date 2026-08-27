@@ -1,9 +1,11 @@
 # Python — Clase 5
 
 ## Tema central
+
 Condicionales (`if`, `elif`, `else`) y bucles `while`, incluyendo `while True` con `break`.
 
 ## Qué se vio
+
 - **`if` / `else` / `elif`**: estructura y orden de evaluación (de arriba hacia abajo).
 - **Interpolación de strings con `f""`**: insertar variables directamente en un texto con `{}`.
 - **`while`**: se ejecuta mientras la condición inicial sea verdadera; se revisa la condición antes de entrar.
@@ -13,6 +15,7 @@ Condicionales (`if`, `elif`, `else`) y bucles `while`, incluyendo `while True` c
 - **Listas (`append`)** usadas para ordenar y acumular resultados.
 
 ## Ejercicios trabajados
+
 - Par o impar de un número.
 - Verificar si un estudiante aprobó un examen.
 - Cajero automático simple con verificación de PIN y saldo.
@@ -23,6 +26,7 @@ Condicionales (`if`, `elif`, `else`) y bucles `while`, incluyendo `while True` c
 - Determinar la cantidad de cifras de un número.
 
 ## Ideas clave
+
 - 🚦 `if/elif/else` evalúa en orden y se detiene en la primera condición verdadera.
 - 🔄 `while True` + `break` es el patrón clásico para "repetir hasta que algo pase".
 - 🎯 `match/case` ordena mejor un menú de opciones que una cadena larga de `elif`.

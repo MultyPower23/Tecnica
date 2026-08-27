@@ -1,9 +1,11 @@
 # SQL — Clase 14 (SQL desde Python)
 
 ## Tema central
+
 Conectar y manejar una base de datos SQLite directamente desde Python con el módulo `sqlite3`.
 
 ## Qué se vio
+
 - **`sqlite3.connect(ruta)`**: crea/abre el archivo de base de datos.
 - **`conexion.cursor()`**: el "intermediario" que ejecuta las consultas SQL desde Python.
 - **`cursor.execute("""...""")`**: ejecutar sentencias SQL como `CREATE TABLE IF NOT EXISTS` para no fallar si la tabla ya existe.
@@ -16,9 +18,11 @@ Conectar y manejar una base de datos SQLite directamente desde Python con el mó
 - **`conexion.close()`**: cerrar la conexión al terminar.
 
 ## Archivo de referencia
+
 `conexionDB.py`
 
 ## Ideas clave
+
 - 🔌 `sqlite3.connect()` + `cursor()` son el puente entre Python y una base de datos SQLite.
 - 📥 `executemany()` con `?` es la forma limpia de insertar muchos datos sin escribir un `INSERT` por cada uno.
 - 💾 Sin `commit()` los cambios no se guardan de verdad en el archivo `.db`.
