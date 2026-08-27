@@ -61,3 +61,4 @@ Resumen rápido de qué se vio en cada clase, para buscar sin tener que entrar c
 | [Clase_19](Mod_03_POO/Java/Clase_19/Clase_19.md) | 2026-08-01 | Arreglos, `while` vs `do-while`, algoritmos de ordenamiento (burbuja, inserción, selección) |
 | [Clase_20](Mod_03_POO/Java/Clase_20/Clase_20.md) | 2026-08-08 | Matrices, matriz traspuesta/simétrica, repaso visual paso a paso de ordenamientos |
 | [Clase_21](Mod_03_POO/Java/Clase_21/Clase_21.md) | 2026-08-15 | Clases anidadas `static`, métodos de instancia vs. `static`, colas (FIFO) y pilas (LIFO) |
+| [Clase_22](Mod_03_POO/Java/Clase_22/Clase_22.md) | 2026-08-22 | POO: clases, atributos, `this`, `super()`, herencia, polimorfismo, encapsulamiento, `abstract` y `interface` |
