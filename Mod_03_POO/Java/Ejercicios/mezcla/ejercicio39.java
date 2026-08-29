@@ -1,7 +1,7 @@
-package Mod_03_POO.Java.Ejercicios;
+package Mod_03_POO.Java.Ejercicios.mezcla;
 
 import javax.swing.JOptionPane;
-import Mod_03_POO.Java.Ejercicios.ejercicio39.ParejaIntegers1.ParejaIntegers2;
+import Mod_03_POO.Java.Ejercicios.mezcla.ejercicio39.ParejaIntegers1.ParejaIntegers2;
 
 public class ejercicio39 {
   public static void main(String[] args) {

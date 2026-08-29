@@ -1,4 +1,4 @@
-package Mod_03_POO.Java.Ejercicios;
+package Mod_03_POO.Java.Ejercicios.mezcla;
 
 import javax.swing.JOptionPane;
 import java.util.Scanner;

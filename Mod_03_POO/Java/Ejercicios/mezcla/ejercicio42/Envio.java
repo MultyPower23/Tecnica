@@ -1,4 +1,4 @@
-package Mod_03_POO.Java.Ejercicios.ejercicio42;
+package Mod_03_POO.Java.Ejercicios.mezcla.ejercicio42;
 
 public class Envio {
   private String codigoGuia;

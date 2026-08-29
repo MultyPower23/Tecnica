@@ -1,4 +1,4 @@
-package Mod_03_POO.Java.Ejercicios;
+package Mod_03_POO.Java.Ejercicios.mezcla;
 
 public class ejercicio19 {
   public static void main(String[] args) {

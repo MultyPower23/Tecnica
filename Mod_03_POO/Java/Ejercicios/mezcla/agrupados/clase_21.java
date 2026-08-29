@@ -1,4 +1,4 @@
-package Mod_03_POO.Java.Ejercicios.agrupados;
+package Mod_03_POO.Java.Ejercicios.mezcla.agrupados;
 
 import javax.swing.JOptionPane;
 
