@@ -6,7 +6,7 @@ Apuntes, ejercicios y proyectos de la técnica en Programación y Desarrollo de 
 
 El repositorio está organizado por **módulo → materia → clase**, con numeración de clase continua y cronológica en todo el repo (no reinicia por módulo ni por materia):
 
-```
+```txt
 Tecnica/
 ├── Mod_01_Bases/
 │   ├── PSeInt/
@@ -48,4 +48,4 @@ Ver [`INDICE_GENERAL.md`](./INDICE_GENERAL.md) para una lista de todas las clase
 
 ## 🛠️ Configuración de entorno
 
-Ver [`.vscode/settings.json`](./.vscode/settings.json) y [`.vscode/extensions.json`](./.vscode/extensions.json) para la configuración de VS Code usada en este repo (formateo automático, linters, extensiones recomendadas). El formateador de Java usa un perfil propio (`GoogleStyle-Matrix`) que combina el estándar de Google con reglas personalizadas para que los arreglos/matrices se vean multilínea.
+Ver [`.vscode/settings.json`](./.vscode/settings.json) y [`.vscode/extensions.json`](./.vscode/extensions.json) para la configuración de VS Code usada en este repo (formateo automático, linters, extensiones recomendadas). El formateador de Java usa el perfil estándar `GoogleStyle` (ver [`.vscode/GoogleStyle.xml`](./.vscode/GoogleStyle.xml)). Para casos puntuales donde una matriz/array necesita verse multilínea, se usan los tags `// @formatter:off` y `// @formatter:on` alrededor del bloque en cuestión, en vez de un perfil de formatter separado.
