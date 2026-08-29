@@ -6,10 +6,20 @@
     "esbenp.prettier-vscode",
     "ReneSaarsoo.sql-formatter-vsc",
     "alexcvzz.vscode-sqlite",
+    "qwtel.sqlite-viewer",
     "redhat.java",
     "vscjava.vscode-java-pack",
     "bierner.markdown-preview-github-styles",
     "bierner.github-markdown-preview",
-    "DavidAnson.vscode-markdownlint"
+    "bierner.markdown-checkboxes",
+    "bierner.markdown-emoji",
+    "bierner.markdown-footnotes",
+    "DavidAnson.vscode-markdownlint",
+    "tomoki1207.pdf",
+    "eamodio.gitlens",
+    "formulahendry.auto-rename-tag",
+    "christian-kohler.path-intellisense",
+    "mhutchie.git-graph",
+    "ritwickdey.liveserver"
   ]
 }
