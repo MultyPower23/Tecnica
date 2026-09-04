@@ -36,6 +36,30 @@ Tecnica/
 
 Cada módulo corresponde a un profesor y una dinámica de clase distinta, así que la subestructura interna puede variar levemente entre uno y otro.
 
+## 📖 Contenido por materia
+
+Un vistazo rápido de qué cubre cada materia, sin entrar en el detalle clase por clase (para eso está el [`INDICE_GENERAL.md`](./INDICE_GENERAL.md), más abajo).
+
+### Mod_01_Bases
+
+| Materia | Contenido |
+| --- | --- |
+| [`PSeInt`](./Mod_01_Bases/PSeInt) | Lógica de programación con pseudocódigo: bucles, condicionales, arreglos y funciones |
+| [`Python`](./Mod_01_Bases/Python) | Sintaxis y tipos de datos, funciones, ficheros, generadores/excepciones, POO básica |
+| [`Git`](./Mod_01_Bases/Git) | Control de versiones: commits, ramas, `push`/`pull` |
+| [`SQL`](./Mod_01_Bases/SQL) | Modelado de tablas, `JOIN`, y conexión a bases de datos desde Python (`sqlite3`) |
+| [`HTML`](./Mod_01_Bases/HTML) | Material de referencia externo, sin división por clase |
+
+### Mod_02_Desarrollo_Humano
+
+Mini módulo de habilidades blandas (entrevistas, trabajo en equipo, hoja de vida) — notas limitadas.
+
+### Mod_03_POO
+
+| Materia | Contenido |
+| --- | --- |
+| [`Java`](./Mod_03_POO/Java) | POO en Java (herencia, polimorfismo, `abstract`/`interface`), estructuras de datos, ordenamientos — explicado con contraste a Python |
+
 ## 📌 Convenciones
 
 - **`Clase_N/`**: contiene el código trabajado en esa clase específica, más un resumen `Clase_N.md`. Cuando varios archivos están conectados entre sí (se importan/usan unos a otros), se agrupan en una subcarpeta propia dentro de la clase (ej. `ficheros_actividad/`, `ficheros_ejemplos/`, `evaluacion/`, `pruebas/`) para mantener el orden y no mezclar contextos distintos.
