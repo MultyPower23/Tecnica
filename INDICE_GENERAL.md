@@ -69,3 +69,4 @@ Resumen rápido de qué se vio en cada clase, para buscar sin tener que entrar c
 | [Clase_21](Mod_03_POO/Java/Clase_21/Clase_21.md) | 2026-08-15 | Clases anidadas `static`, métodos de instancia vs. `static`, colas (FIFO) y pilas (LIFO) |
 | [Clase_22](Mod_03_POO/Java/Clase_22/Clase_22.md) | 2026-08-22 | POO: clases, atributos, `this`, `super()`, herencia, polimorfismo, encapsulamiento, `abstract` y `interface` |
 | [Clase_23](Mod_03_POO/Java/Clase_23/Clase_23.md) | 2026-08-29 | Taller de repaso: operadores, condicionales, bucles, arreglos y matrices (30 ejercicios) |
+| [Clase_24](Mod_03_POO/Java/Clase_24/Clase_24.md) | 2026-09-05 | Herencia, polimorfismo, sobreescritura (`@Override`), intro a clases abstractas |
