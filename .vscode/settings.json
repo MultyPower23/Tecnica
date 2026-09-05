@@ -103,7 +103,8 @@
     "Mod_02_Desarrollo_Humano": "messages",
     "Mod_03_POO": "class",
     "PSeInt": "tools",
-    "Ejercicios": "test"
+    "Ejercicios": "test",
+    "Trabajo_Final": "project",
   },
 
   "material-icon-theme.files.associations": {
