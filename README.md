@@ -18,7 +18,7 @@ Tecnica/
 │   │   └── Clase_11/
 │   ├── SQL/
 │   │   └── Clase_12/ ... Clase_14/
-│   ├── HTML/            # sin división por clase, material de referencia
+│   └── HTML/            # sin división por clase, material de referencia
 │
 ├── Mod_02_Desarrollo_Humano/   # mini módulo intermedio (entrevista, trabajo en equipo, hoja de vida)
 │   ├── Clase_15/
