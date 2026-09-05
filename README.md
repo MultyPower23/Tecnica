@@ -25,9 +25,9 @@ Tecnica/
 │   └── Clase_16/
 │
 ├── Mod_03_POO/
-│   └── Java/
-│       ├── Clase_17/ ... Clase_26/
-│       └── Ejercicios/  # taller de repaso del módulo (ver abajo)
+│   ├── Java/
+│   │   └── Clase_17/ ... Clase_26/
+│   └── Ejercicios/
 │
 ├── INDICE_GENERAL.md
 ├── README.md
@@ -63,7 +63,7 @@ Mini módulo de habilidades blandas (entrevistas, trabajo en equipo, hoja de vid
 ## 📌 Convenciones
 
 - **`Clase_N/`**: contiene el código trabajado en esa clase específica, más un resumen `Clase_N.md`. Cuando varios archivos están conectados entre sí (se importan/usan unos a otros), se agrupan en una subcarpeta propia dentro de la clase (ej. `ficheros_actividad/`, `ficheros_ejemplos/`, `evaluacion/`, `pruebas/`) para mantener el orden y no mezclar contextos distintos.
-- **`Ejercicios/`** (dentro de un módulo): contiene el taller de repaso/consolidación del módulo (ej. `Taller/` en POO) — una entrega puntual con su guía en PDF y las soluciones, no una acumulación progresiva de ejercicios sueltos de cada clase.
+- **`Ejercicios/`**: entregas puntuales del módulo, con su guía en PDF y las soluciones.
 - **Resúmenes (`.md`)**: cada carpeta de clase incluye un resumen de lo visto, pensado como material de apoyo rápido para redactar apuntes propios, no como reemplazo de ellos. Cuando faltan notas reales de una clase (perdidas, incompletas, o a mano sin digitalizar), el resumen lo indica explícitamente con un aviso ⚠️ en vez de inventar contenido.
 
 ## 🗂️ Índice general
