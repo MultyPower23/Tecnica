@@ -26,7 +26,7 @@ Tecnica/
 │
 ├── Mod_03_POO/
 │   └── Java/
-│       ├── Clase_17/ ... Clase_23/
+│       ├── Clase_17/ ... Clase_26/
 │       └── Ejercicios/  # taller de repaso del módulo (ver abajo)
 │
 ├── INDICE_GENERAL.md
