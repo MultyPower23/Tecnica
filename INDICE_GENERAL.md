@@ -29,8 +29,7 @@ Resumen rápido de qué se vio en cada clase, para buscar sin tener que entrar c
 ### Git
 
 | Clase | Fecha | Tema principal |
-
-|---|---|---|
+| --- | --- | --- |
 | [Clase_11](Mod_01_Bases/Git/Clase_11/Clase_11.md) | 2026-05-09 | Control de versiones con Git: commits, `add`/`commit`/`push`/`pull`, ramas, deshacer cambios |
 
 ### SQL
