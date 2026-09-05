@@ -3,6 +3,41 @@
   "workbench.startupEditor": "none",
   "workbench.iconTheme": "material-icon-theme",
 
+  "material-icon-theme.folders.associations": {
+    "Mod_01_Bases": "core",
+    "Mod_02_Desarrollo_Humano": "messages",
+    "Mod_03_POO": "class",
+    "PSeInt": "tools",
+    "Ejercicios": "test"
+  },
+
+  "material-icon-theme.files.associations": {
+    "INDICE_GENERAL.md": "toc",
+    "Clase_1.md": "changelog",
+    "Clase_2.md": "changelog",
+    "Clase_3.md": "changelog",
+    "Clase_4.md": "changelog",
+    "Clase_5.md": "changelog",
+    "Clase_6.md": "changelog",
+    "Clase_7.md": "changelog",
+    "Clase_8.md": "changelog",
+    "Clase_9.md": "changelog",
+    "Clase_10.md": "changelog",
+    "Clase_11.md": "changelog",
+    "Clase_12.md": "changelog",
+    "Clase_13.md": "changelog",
+    "Clase_14.md": "changelog",
+    "Clase_15.md": "changelog",
+    "Clase_16.md": "changelog",
+    "Clase_17.md": "changelog",
+    "Clase_18.md": "changelog",
+    "Clase_19.md": "changelog",
+    "Clase_20.md": "changelog",
+    "Clase_21.md": "changelog",
+    "Clase_22.md": "changelog",
+    "Clase_23.md": "changelog",
+  },
+
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
 
