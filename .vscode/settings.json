@@ -78,7 +78,11 @@
   "workbench.editorAssociations": {
     "**/Clase_*.md": "vscode.markdown.preview.editor",
     "COMMIT_CONVENTION.md": "vscode.markdown.preview.editor",
-    "INDICE_GENERAL.md": "vscode.markdown.preview.editor"
+    "INDICE_GENERAL.md": "vscode.markdown.preview.editor",
+    "01_Estructura_y_Perfil_Profesional.md": "vscode.markdown.preview.editor",
+    "02_Experiencia_Educacion_Habilidades.md": "vscode.markdown.preview.editor",
+    "03_Errores_Y_Presentacion_Personal.md": "vscode.markdown.preview.editor",
+    "04_Portales_Y_Herramientas.md": "vscode.markdown.preview.editor",
   },
 
   // ==================== LINTERS ====================
