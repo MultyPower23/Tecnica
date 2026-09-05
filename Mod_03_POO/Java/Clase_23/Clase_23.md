@@ -2,7 +2,7 @@
 
 ## 📚 Tema central
 
-No fue una clase de teoría nueva sino un **taller práctico** (Taller 1, en pareja) de 30 ejercicios que repasa y consolida todo lo visto en las Clases 17 a 22: tipos primitivos, operadores, condicionales, bucles, arreglos y matrices. Parte de los ejercicios ya se habían resuelto en clases anteriores y solo se recopilaron; otros se hicieron de cero para el taller.
+No fue una clase de teoría nueva sino un **taller práctico** (Taller, en pareja) de 30 ejercicios que repasa y consolida todo lo visto en las Clases 17 a 22: tipos primitivos, operadores, condicionales, bucles, arreglos y matrices. Parte de los ejercicios ya se habían resuelto en clases anteriores y solo se recopilaron; otros se hicieron de cero para el taller.
 
 ## 🧠 Qué se vio
 
