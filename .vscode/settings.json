@@ -12,6 +12,7 @@
   },
 
   "material-icon-theme.files.associations": {
+    "COMMIT_CONVENTION.md": "commitlint",
     "INDICE_GENERAL.md": "toc",
     "Clase_1.md": "changelog",
     "Clase_2.md": "changelog",
@@ -109,6 +110,11 @@
   // ==================== MARKDOWN ====================
   "[markdown]": {
     "editor.formatOnSave": true // true activo el formateo
+  },
+  "workbench.editorAssociations": {
+    "**/Clase_*.md": "vscode.markdown.preview.editor",
+    "COMMIT_CONVENTION.md": "vscode.markdown.preview.editor",
+    "INDICE_GENERAL.md": "vscode.markdown.preview.editor"
   },
 
   // ==================== LINTERS ====================
