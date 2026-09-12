@@ -1,0 +1,90 @@
+%% ==============================================================================
+%% GUÍA DE VISUALIZACIÓN:
+%% Para ver este diagrama de clases en VS Code (extensión Mermaid Preview):
+%% 1. Presiona: Ctrl + Shift + P  (o Cmd + Shift + P en macOS)
+%% 2. Escribe y selecciona: Mermaid Preview: Preview Diagram
+%% ==============================================================================
+
+classDiagram
+    class Pasajero {
+        -String nombre
+        -String numeroPasaporte
+        -String nacionalidad
+        +getNombre() String
+        +getNumeroPasaporte() String
+        +getNacionalidad() String
+        +toString() String
+    }
+
+    class Vuelo {
+        -String identificador
+        -String ciudadOrigen
+        -String ciudadDestino
+        -double precio
+        -int numeroMaximoPasajeros
+        -ArrayList~Pasajero~ pasajeros
+        +getters()...
+        +reservarAsiento(Pasajero) boolean
+        +toString() String
+    }
+
+    class Compania {
+        -String nombre
+        -ArrayList~Vuelo~ vuelos
+        +getNombre() String
+        +getVuelos() ArrayList~Vuelo~
+        +agregarVuelo(Vuelo) void
+    }
+
+    class Aeropuerto {
+        <<abstract>>
+        -String nombre
+        -String ciudad
+        -String pais
+        -ArrayList~Compania~ companias
+        +getters()...
+        +agregarCompania(Compania) void
+        +informacionDeFinanciacion() String*
+        +toString() String
+    }
+
+    class AeropuertoPublico {
+        -double subvencionGobierno
+        +getSubvencionGobierno() double
+        +informacionDeFinanciacion() String
+    }
+
+    class AeropuertoPrivado {
+        -ArrayList~String~ empresasPatrocinadoras
+        +agregarPatrocinador(String) void
+        +informacionDeFinanciacion() String
+    }
+
+    class Principal {
+        -ArrayList~Aeropuerto~ aeropuertos
+        +main(String[])$ void
+        +mostrarMenu()$ void
+    }
+
+    class Utilidades {
+        <<utility>>
+        +imprimirEncabezado()$ void
+        +limpiarConsola()$ void
+        +cambiarPagina()$ void
+        +cargarDatos()$ ArrayList~Aeropuerto~
+    }
+
+    Vuelo "1" o-- "0..*" Pasajero : contiene
+    Compania "1" o-- "1..*" Vuelo : ofrece
+    Aeropuerto "1" o-- "0..*" Compania : opera en
+    Principal "1" o-- "1..*" Aeropuerto : administra
+
+    Aeropuerto <|-- AeropuertoPublico : extends
+    Aeropuerto <|-- AeropuertoPrivado : extends
+
+    Principal ..> Utilidades : usa
+    Utilidades ..> AeropuertoPublico : crea
+    Utilidades ..> AeropuertoPrivado : crea
+    Utilidades ..> Compania : crea
+    Utilidades ..> Vuelo : crea
+    Utilidades ..> Pasajero : crea

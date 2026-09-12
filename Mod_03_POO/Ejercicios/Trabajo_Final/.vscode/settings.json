@@ -1,0 +1,26 @@
+{
+  // ==================== JAVA (lo único que hay en este proyecto) ====================
+  "[java]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "redhat.java",
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
+  "java.format.settings.url": "${workspaceFolder}/.vscode/GoogleStyle.xml",
+  "java.format.settings.profile": "GoogleStyle",
+
+  // Evita que VS Code indexe/monitoree los PDF del enunciado y evidencias
+  // (previene errores de build si algún sync tipo OneDrive los bloquea)
+  "java.project.resourceFilters": [
+    "node_modules",
+    ".git",
+    "\\.pdf$",
+    "\\.docx$",
+    "\\.zip$"
+  ],
+
+  // ==================== HIGIENE DE ARCHIVOS (para que los diffs entre los dos queden limpios) ====================
+  "files.eol": "\n",
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true
+}

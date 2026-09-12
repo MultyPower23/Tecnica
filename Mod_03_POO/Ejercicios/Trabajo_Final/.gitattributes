@@ -1,0 +1,3 @@
+# Normaliza todos los finales de línea a LF, sin importar el sistema operativo
+# de cada integrante. Evita diffs falsos por CRLF vs LF en Windows.
+* text=auto eol=lf

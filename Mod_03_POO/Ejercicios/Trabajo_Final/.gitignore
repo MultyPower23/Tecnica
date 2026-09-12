@@ -1,0 +1,14 @@
+# ==================== JAVA COMPILADO ====================
+bin/
+out/
+*.class
+
+# ==================== METADATA DE ECLIPSE / JDT (usada por la extensión de Java de VS Code) ====================
+.settings/
+.classpath
+.project
+.factorypath
+
+# ==================== SISTEMA OPERATIVO ====================
+.DS_Store
+Thumbs.db
