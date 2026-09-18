@@ -38,7 +38,7 @@ Resumen rápido de qué se vio en cada clase, para buscar sin tener que entrar c
 | --- | --- | --- |
 | [Clase_12](Mod_01_Fundamentos/SQL/Clase_12/Clase_12.md) | 2026-05-16 | `CREATE TABLE`, llaves primarias/foráneas, `INSERT`, `SELECT`, `UPDATE`, `DELETE`, `INNER JOIN` |
 | [Clase_13](Mod_01_Fundamentos/SQL/Clase_13/Clase_13.md) | 2026-05-23 | Modelado con varias tablas relacionadas, `INNER JOIN` múltiple, evaluación práctica |
-| [Clase_14](Mod_01_Fundamentos/SQL/Clase_14_Python/Clase_14.md) | 2026-05-30 | SQL desde Python con `sqlite3` (`cursor`, `executemany`, `commit`, reportes con `MAX/MIN/COUNT`) |
+| [Clase_14](Mod_01_Fundamentos/SQL/Clase_14/Clase_14.md) | 2026-05-30 | SQL desde Python con `sqlite3` (`cursor`, `executemany`, `commit`, reportes con `MAX/MIN/COUNT`) |
 
 ### Otras carpetas (sin división por clase)
 
