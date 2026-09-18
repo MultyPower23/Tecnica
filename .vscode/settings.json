@@ -83,6 +83,9 @@
     "02_Experiencia_Educacion_Habilidades.md": "vscode.markdown.preview.editor",
     "03_Errores_Y_Presentacion_Personal.md": "vscode.markdown.preview.editor",
     "04_Portales_Y_Herramientas.md": "vscode.markdown.preview.editor",
+    "Mod_01_Fundamentos/README.md": "vscode.markdown.preview.editor",
+    "Mod_02_Desarrollo_Humano/README.md": "vscode.markdown.preview.editor",
+    "Mod_03_POO/README.md": "vscode.markdown.preview.editor"
   },
 
   // ==================== LINTERS ====================
