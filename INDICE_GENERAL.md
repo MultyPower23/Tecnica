@@ -44,7 +44,6 @@ Resumen rápido de qué se vio en cada clase, para buscar sin tener que entrar c
 
 | Carpeta | Contenido |
 | --- | --- |
-| [HTML](Mod_01_Fundamentos/HTML/HTML.md) | Un archivo de ejemplo externo (no propio) de simulación de partículas en 3D |
 | Ejemplos_Interfaz | Ejemplos sueltos de Python (Tkinter, `os`, `sqlite3`) rescatados de un proyecto abandonado — sin recopilatorio, no es contenido de clase |
 
 ## Mod_02_Desarrollo_Humano

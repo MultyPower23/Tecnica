@@ -18,7 +18,6 @@ Tecnica/
 │   │   └── Clase_11/
 │   ├── SQL/
 │   │   └── Clase_12/ ... Clase_14/
-│   └── HTML/            # sin división por clase, material de referencia
 │
 ├── Mod_02_Desarrollo_Humano/   # mini módulo intermedio (entrevista, trabajo en equipo, hoja de vida)
 │   ├── Clase_15/
@@ -48,7 +47,6 @@ Un vistazo rápido de qué cubre cada materia, sin entrar en el detalle clase po
 | [`Python`](./Mod_01_Fundamentos/Python) | Sintaxis y tipos de datos, funciones, ficheros, generadores/excepciones, POO básica |
 | [`Git`](./Mod_01_Fundamentos/Git) | Control de versiones: commits, ramas, `push`/`pull` |
 | [`SQL`](./Mod_01_Fundamentos/SQL) | Modelado de tablas, `JOIN`, y conexión a bases de datos desde Python (`sqlite3`) |
-| [`HTML`](./Mod_01_Fundamentos/HTML) | Material de referencia externo, sin división por clase |
 
 ### Mod_02_Desarrollo_Humano
 
