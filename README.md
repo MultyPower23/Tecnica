@@ -1,16 +1,30 @@
-# Técnica en Programación y Desarrollo de Software
+# 💻 Técnica en Programación y Desarrollo de Software
 
 Apuntes, ejercicios y proyectos de la técnica en Programación y Desarrollo de Software (convenio UPB Medellín con colegios de grado 10 y 11).
 
+🎓 Módulo 3 en curso · 📚 25 clases registradas · 🟢 Activo
+
 ## 📈 Progreso
 
-- [x] Mod_01_Fundamentos (PSeInt, Python, Git, SQL)
-- [x] Mod_02_Desarrollo_Humano
-- [ ] Mod_03_POO (Java) — en curso
-- [ ] Mod_04_DispositivosMoviles (Kotlin) — confirmado
-- [ ] Lengua Extranjera Inglés — pendiente
-- [ ] Desarrollo Web (JavaScript/PHP) — pendiente
-- [ ] Proyecto de base tecnológica — pendiente
+| Módulo | Estado | Clases |
+| --- | --- | ---: |
+| Fundamentos | ✅ | 14 |
+| Desarrollo Humano | ✅ | 2 |
+| POO (Java) | 🟡 En curso | 10 |
+| Dispositivos Móviles (Kotlin) | ⏳ Confirmado | — |
+| Lengua Extranjera (Inglés) | ⏳ Pendiente | — |
+| Desarrollo Web (JS/PHP) | ⏳ Pendiente | — |
+| Proyecto de base tecnológica | ⏳ Pendiente | — |
+
+## 🧭 Recorrido
+
+PSeInt → Python → Git + SQL → Desarrollo Humano → POO (Java) → Kotlin → ...
+
+## 🚀 Trabajos grandes
+
+Entregas donde se integran varios temas de una vez, más allá de una clase suelta:
+
+- **Sistema de Gestión Aeroportuaria** (Mod_03) — herencia, clases abstractas, polimorfismo. Repo del proyecto: [`Hernandez_Ciro_ProyectoFinalJava`](https://github.com/MultyPower23/Hernandez_Ciro_ProyectoFinalJava)
 
 ## 📂 Estructura
 
