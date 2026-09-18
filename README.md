@@ -2,6 +2,16 @@
 
 Apuntes, ejercicios y proyectos de la técnica en Programación y Desarrollo de Software (convenio UPB Medellín con colegios de grado 10 y 11).
 
+## 📈 Progreso
+
+- [x] Mod_01_Fundamentos (PSeInt, Python, Git, SQL)
+- [x] Mod_02_Desarrollo_Humano
+- [ ] Mod_03_POO (Java) — en curso
+- [ ] Mod_04_DispositivosMoviles (Kotlin) — confirmado
+- [ ] Lengua Extranjera Inglés — pendiente
+- [ ] Desarrollo Web (JavaScript/PHP) — pendiente
+- [ ] Proyecto de base tecnológica — pendiente
+
 ## 📂 Estructura
 
 El repositorio está organizado por **módulo → materia → clase**, con numeración de clase continua y cronológica en todo el repo (no reinicia por módulo ni por materia):
@@ -67,6 +77,20 @@ Mini módulo de habilidades blandas (entrevistas, trabajo en equipo, hoja de vid
 ## 🗂️ Índice general
 
 Ver [`INDICE_GENERAL.md`](./INDICE_GENERAL.md) para una lista de todas las clases con fecha, tema principal y enlace directo a cada resumen, sin tener que navegar carpeta por carpeta.
+
+## 📥 Cómo clonar
+
+`Mod_03_POO/Ejercicios/Trabajo_Final` es un submódulo git que apunta al repo del [proyecto final](https://github.com/MultyPower23/Hernandez_Ciro_ProyectoFinalJava). Clonar este repo sin más deja esa carpeta vacía. Para traer todo:
+
+```bash
+git clone --recurse-submodules https://github.com/MultyPower23/Tecnica.git
+```
+
+Si ya clonaste sin ese flag:
+
+```bash
+git submodule update --init --recursive
+```
 
 ## 🛠️ Configuración de entorno
 
