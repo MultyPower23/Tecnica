@@ -24,6 +24,7 @@ PSeInt → Python → Git + SQL → Desarrollo Humano → POO (Java) → Kotlin 
 
 Entregas donde se integran varios temas de una vez, más allá de una clase suelta:
 
+- **MegaIP** (Mod_01) — sistema CRUD con Flask + SQLite, 4 tablas relacionadas por `usuario_id` (usuarios, servicios, pagos, equipos). Temática libre; luego evolucionó a proyecto personal. Repo: [`Proyecto_MegaIP`](https://github.com/MultyPower23/Proyecto_MegaIP)
 - **Sistema de Gestión Aeroportuaria** (Mod_03) — herencia, clases abstractas, polimorfismo. Repo del proyecto: [`Hernandez_Ciro_ProyectoFinalJava`](https://github.com/MultyPower23/Hernandez_Ciro_ProyectoFinalJava)
 
 ## 📂 Estructura
