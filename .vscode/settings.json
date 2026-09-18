@@ -103,7 +103,7 @@
 
   // ==================== ICONOS ====================
   "material-icon-theme.folders.associations": {
-    "Mod_01_Bases": "core",
+    "Mod_01_Fundamentos": "core",
     "Mod_02_Desarrollo_Humano": "messages",
     "Mod_03_POO": "class",
     "PSeInt": "tools",

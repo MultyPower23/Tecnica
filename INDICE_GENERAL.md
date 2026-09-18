@@ -4,52 +4,52 @@ Resumen rápido de qué se vio en cada clase, para buscar sin tener que entrar c
 
 > Formato de fecha: `AAAA-MM-DD` (ISO 8601) — ordena bien tanto alfabética como cronológicamente.
 
-## Mod_01_Bases
+## Mod_01_Fundamentos
 
 ### PSeInt
 
 | Clase | Fecha | Tema principal |
 | --- | --- | --- |
-| [Clase_1](Mod_01_Bases/PSeInt/Clase_1/Clase_1.md) | 2026-02-21 | Bucles (`Para`, `Mientras`, `Repetir`) y condicionales (`Según`) — nivel introductorio |
-| [Clase_2](Mod_01_Bases/PSeInt/Clase_2/Clase_2.md) | 2026-02-28 | Arreglos (`Dimensionar`), funciones y subprocesos, validación de texto |
+| [Clase_1](Mod_01_Fundamentos/PSeInt/Clase_1/Clase_1.md) | 2026-02-21 | Bucles (`Para`, `Mientras`, `Repetir`) y condicionales (`Según`) — nivel introductorio |
+| [Clase_2](Mod_01_Fundamentos/PSeInt/Clase_2/Clase_2.md) | 2026-02-28 | Arreglos (`Dimensionar`), funciones y subprocesos, validación de texto |
 
 ### Python
 
 | Clase | Fecha | Tema principal |
 | --- | --- | --- |
-| [Clase_3](Mod_01_Bases/Python/Clase_3/Clase_3.md) | 2026-03-07 | Variables y tipos de datos básicos (`int`, `float`, `str`, `bool`, listas) |
-| [Clase_4](Mod_01_Bases/Python/Clase_4/Clase_4.md) | 2026-03-14 | `input()`, anotación de tipos, `while` como validador, funciones con `return` |
-| [Clase_5](Mod_01_Bases/Python/Clase_5/Clase_5.md) | 2026-03-21 | Condicionales (`if/elif/else`), `while`, `while True` + `break`, `match/case` |
-| [Clase_6](Mod_01_Bases/Python/Clase_6/Clase_6.md) | 2026-03-28 | `for` con `range()`, diccionarios (intro), librería `math` |
-| [Clase_7](Mod_01_Bases/Python/Clase_7/Clase_7.md) | 2026-04-11 | `range()` y `len()` a fondo, `import random`, batería de ejercicios de lógica |
-| [Clase_8](Mod_01_Bases/Python/Clase_8/Clase_8.md) | 2026-04-18 | Funciones a fondo (`return`, valores por defecto), ficheros (`open`, modos x/w/a/r) |
-| [Clase_9](Mod_01_Bases/Python/Clase_9/Clase_9.md) | 2026-04-25 | Generadores (`yield`, `next`, `yield from`), manejo de excepciones (`try/except/finally`) |
-| [Clase_10](Mod_01_Bases/Python/Clase_10/Clase_10.md) | 2026-05-02 | POO: clases, atributos, `self`, `__init__`, encapsulamiento, herencia, `super()`; diccionarios a fondo |
+| [Clase_3](Mod_01_Fundamentos/Python/Clase_3/Clase_3.md) | 2026-03-07 | Variables y tipos de datos básicos (`int`, `float`, `str`, `bool`, listas) |
+| [Clase_4](Mod_01_Fundamentos/Python/Clase_4/Clase_4.md) | 2026-03-14 | `input()`, anotación de tipos, `while` como validador, funciones con `return` |
+| [Clase_5](Mod_01_Fundamentos/Python/Clase_5/Clase_5.md) | 2026-03-21 | Condicionales (`if/elif/else`), `while`, `while True` + `break`, `match/case` |
+| [Clase_6](Mod_01_Fundamentos/Python/Clase_6/Clase_6.md) | 2026-03-28 | `for` con `range()`, diccionarios (intro), librería `math` |
+| [Clase_7](Mod_01_Fundamentos/Python/Clase_7/Clase_7.md) | 2026-04-11 | `range()` y `len()` a fondo, `import random`, batería de ejercicios de lógica |
+| [Clase_8](Mod_01_Fundamentos/Python/Clase_8/Clase_8.md) | 2026-04-18 | Funciones a fondo (`return`, valores por defecto), ficheros (`open`, modos x/w/a/r) |
+| [Clase_9](Mod_01_Fundamentos/Python/Clase_9/Clase_9.md) | 2026-04-25 | Generadores (`yield`, `next`, `yield from`), manejo de excepciones (`try/except/finally`) |
+| [Clase_10](Mod_01_Fundamentos/Python/Clase_10/Clase_10.md) | 2026-05-02 | POO: clases, atributos, `self`, `__init__`, encapsulamiento, herencia, `super()`; diccionarios a fondo |
 
 ### Git
 
 | Clase | Fecha | Tema principal |
 | --- | --- | --- |
-| [Clase_11](Mod_01_Bases/Git/Clase_11/Clase_11.md) | 2026-05-09 | Control de versiones con Git: commits, `add`/`commit`/`push`/`pull`, ramas, deshacer cambios |
+| [Clase_11](Mod_01_Fundamentos/Git/Clase_11/Clase_11.md) | 2026-05-09 | Control de versiones con Git: commits, `add`/`commit`/`push`/`pull`, ramas, deshacer cambios |
 
 ### SQL
 
 | Clase | Fecha | Tema principal |
 | --- | --- | --- |
-| [Clase_12](Mod_01_Bases/SQL/Clase_12/Clase_12.md) | 2026-05-16 | `CREATE TABLE`, llaves primarias/foráneas, `INSERT`, `SELECT`, `UPDATE`, `DELETE`, `INNER JOIN` |
-| [Clase_13](Mod_01_Bases/SQL/Clase_13/Clase_13.md) | 2026-05-23 | Modelado con varias tablas relacionadas, `INNER JOIN` múltiple, evaluación práctica |
-| [Clase_14](Mod_01_Bases/SQL/Clase_14_Python/Clase_14.md) | 2026-05-30 | SQL desde Python con `sqlite3` (`cursor`, `executemany`, `commit`, reportes con `MAX/MIN/COUNT`) |
+| [Clase_12](Mod_01_Fundamentos/SQL/Clase_12/Clase_12.md) | 2026-05-16 | `CREATE TABLE`, llaves primarias/foráneas, `INSERT`, `SELECT`, `UPDATE`, `DELETE`, `INNER JOIN` |
+| [Clase_13](Mod_01_Fundamentos/SQL/Clase_13/Clase_13.md) | 2026-05-23 | Modelado con varias tablas relacionadas, `INNER JOIN` múltiple, evaluación práctica |
+| [Clase_14](Mod_01_Fundamentos/SQL/Clase_14_Python/Clase_14.md) | 2026-05-30 | SQL desde Python con `sqlite3` (`cursor`, `executemany`, `commit`, reportes con `MAX/MIN/COUNT`) |
 
 ### Otras carpetas (sin división por clase)
 
 | Carpeta | Contenido |
 | --- | --- |
-| [HTML](Mod_01_Bases/HTML/HTML.md) | Un archivo de ejemplo externo (no propio) de simulación de partículas en 3D |
+| [HTML](Mod_01_Fundamentos/HTML/HTML.md) | Un archivo de ejemplo externo (no propio) de simulación de partículas en 3D |
 | Ejemplos_Interfaz | Ejemplos sueltos de Python (Tkinter, `os`, `sqlite3`) rescatados de un proyecto abandonado — sin recopilatorio, no es contenido de clase |
 
 ## Mod_02_Desarrollo_Humano
 
-> Mini módulo de 2 clases entre Mod_01_Bases y Mod_03_POO. Sin notas digitales propias — ver cada resumen para más detalle.
+> Mini módulo de 2 clases entre Mod_01_Fundamentos y Mod_03_POO. Sin notas digitales propias — ver cada resumen para más detalle.
 
 | Clase | Fecha | Tema principal |
 | --- | --- | --- |

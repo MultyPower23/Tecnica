@@ -8,7 +8,7 @@ El repositorio está organizado por **módulo → materia → clase**, con numer
 
 ```txt
 Tecnica/
-├── Mod_01_Bases/
+├── Mod_01_Fundamentos/
 │   ├── PSeInt/
 │   │   ├── Clase_1/
 │   │   └── Clase_2/
@@ -40,15 +40,15 @@ Cada módulo corresponde a un profesor y una dinámica de clase distinta, así q
 
 Un vistazo rápido de qué cubre cada materia, sin entrar en el detalle clase por clase (para eso está el [`INDICE_GENERAL.md`](./INDICE_GENERAL.md), más abajo).
 
-### Mod_01_Bases
+### Mod_01_Fundamentos
 
 | Materia | Contenido |
 | --- | --- |
-| [`PSeInt`](./Mod_01_Bases/PSeInt) | Lógica de programación con pseudocódigo: bucles, condicionales, arreglos y funciones |
-| [`Python`](./Mod_01_Bases/Python) | Sintaxis y tipos de datos, funciones, ficheros, generadores/excepciones, POO básica |
-| [`Git`](./Mod_01_Bases/Git) | Control de versiones: commits, ramas, `push`/`pull` |
-| [`SQL`](./Mod_01_Bases/SQL) | Modelado de tablas, `JOIN`, y conexión a bases de datos desde Python (`sqlite3`) |
-| [`HTML`](./Mod_01_Bases/HTML) | Material de referencia externo, sin división por clase |
+| [`PSeInt`](./Mod_01_Fundamentos/PSeInt) | Lógica de programación con pseudocódigo: bucles, condicionales, arreglos y funciones |
+| [`Python`](./Mod_01_Fundamentos/Python) | Sintaxis y tipos de datos, funciones, ficheros, generadores/excepciones, POO básica |
+| [`Git`](./Mod_01_Fundamentos/Git) | Control de versiones: commits, ramas, `push`/`pull` |
+| [`SQL`](./Mod_01_Fundamentos/SQL) | Modelado de tablas, `JOIN`, y conexión a bases de datos desde Python (`sqlite3`) |
+| [`HTML`](./Mod_01_Fundamentos/HTML) | Material de referencia externo, sin división por clase |
 
 ### Mod_02_Desarrollo_Humano
 
