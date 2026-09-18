@@ -107,6 +107,13 @@ Si ya clonaste sin ese flag:
 git submodule update --init --recursive
 ```
 
+## 🧑‍💻 Cómo usar este repositorio
+
+1. Arrancá por [`INDICE_GENERAL.md`](./INDICE_GENERAL.md) — lista todas las clases con fecha y tema.
+2. Cada `Mod_0X_.../README.md` resume esa etapa completa.
+3. Cada `Clase_N/` trae su código y su propio `Clase_N.md`.
+4. Si falta el resumen de alguna clase, el `.md` lo dice con ⚠️ en vez de inventar contenido.
+
 ## 🛠️ Configuración de entorno
 
 Ver [`.vscode/settings.json`](./.vscode/settings.json) y [`.vscode/extensions.json`](./.vscode/extensions.json) para la configuración de VS Code usada en este repo (formateo automático, linters, extensiones recomendadas). El formateador de Java usa el perfil estándar `GoogleStyle` (ver [`.vscode/GoogleStyle.xml`](./.vscode/GoogleStyle.xml)). Para casos puntuales donde una matriz/array necesita verse multilínea, se usan los tags `// @formatter:off` y `// @formatter:on` alrededor del bloque en cuestión, en vez de un perfil de formatter separado.
