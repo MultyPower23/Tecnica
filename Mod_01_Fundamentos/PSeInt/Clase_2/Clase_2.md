@@ -2,11 +2,11 @@
 
 > ⚠️ Reconstrucción aproximada: estos archivos no estaban organizados por clase cuando se crearon, y además hubo un cambio de sala que hizo perder parte del material antes de empezar a respaldarlo. La separación entre Clase 1 y Clase 2 es una estimación por nivel de dificultad, no un registro exacto de qué se vio cada día.
 
-## Tema central
+## 📚 Tema central
 
 Arreglos (arrays), funciones y subprocesos — un paso más allá de la Clase 1.
 
-## Qué se vio (probablemente)
+## 🧠 Qué se vio
 
 - **`Dimensionar` / `Dimension`**: crear arreglos de tamaño fijo o definido por el usuario.
 - **Recorrido de arreglos con `Para`**: llenar y leer posiciones una por una.
@@ -15,7 +15,7 @@ Arreglos (arrays), funciones y subprocesos — un paso más allá de la Clase 1.
 - **Longitud y validación de texto**: `Longitud()`, `Subcadena()`, y comparación carácter por carácter, usados para validar una contraseña con varias reglas a la vez (mínimo de caracteres, mayúscula, minúscula, número, carácter especial).
 - **Combinación de arreglos paralelos**: dos arreglos relacionados por posición (ej. nombres de materias y sus notas correspondientes).
 
-## Ejercicios trabajados
+## 💻 Ejercicios trabajados
 
 - Llenar y mostrar un arreglo ingresado por el usuario.
 - Generar y mostrar una cantidad de números aleatorios definida por el usuario.
@@ -27,7 +27,7 @@ Arreglos (arrays), funciones y subprocesos — un paso más allá de la Clase 1.
 - Promedio de seis notas usando un arreglo y una función de promedio.
 - Verificación de contraseña con múltiples reglas simultáneas (longitud, mayúscula, minúscula, número, carácter especial).
 
-## Ideas clave
+## ✅ Ideas clave
 
 - 📦 Un arreglo (`Dimensionar`) guarda varios valores relacionados bajo un solo nombre, accesibles por posición.
 - 🧩 `Función` devuelve un valor que puedes usar después; `SubProceso` solo ejecuta una acción.

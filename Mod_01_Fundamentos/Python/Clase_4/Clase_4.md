@@ -1,10 +1,10 @@
 # Python — Clase 4
 
-## Tema central
+## 📚 Tema central
 
 `input()`, anotación de tipos (`variable: tipo`), operaciones matemáticas básicas y primeras funciones con `return`.
 
-## Qué se vio
+## 🧠 Qué se vio
 
 - **`input()`** para pedir datos al usuario, siempre devuelve texto (`str`) así que se debe convertir con `float()` o `int()` si se necesita un número.
 - **Anotación de tipos**: forma de indicar el tipo esperado de una variable (`gil: float = ...`), es solo una guía visual, Python no la obliga.
@@ -13,7 +13,7 @@
 - **`.split()`**: separar un texto ingresado por espacios para convertirlo en una lista de valores.
 - **Condicionales (`if`/`elif`)** aplicados a resultados calculados (ej. decidir si una nota final es sobresaliente, mínima o de repetición).
 
-## Ejercicios trabajados
+## 💻 Ejercicios trabajados
 
 - Reparto de dinero entre tres personas con fórmulas matemáticas.
 - Cálculo de nota definitiva ponderando participación, parciales y examen final, con validación de rango.
@@ -21,7 +21,7 @@
 - Promedio de calificaciones ingresadas como texto separado por espacios.
 - Cálculo de paga mensual de un vendedor de carros según cantidad y valor vendido (con parámetro por defecto).
 
-## Ideas clave
+## ✅ Ideas clave
 
 - ⌨️ `input()` siempre da texto: hay que convertirlo explícitamente al tipo que necesitas.
 - 🔁 Un `while` con la condición "no válido" es la forma más simple de validar datos del usuario.

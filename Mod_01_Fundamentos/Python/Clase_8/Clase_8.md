@@ -1,10 +1,10 @@
 # Python — Clase 8
 
-## Tema central
+## 📚 Tema central
 
 Funciones a fondo (parámetros, `return`, valores por defecto con `None`) y manejo de ficheros (`open`, modos `x`/`w`/`a`/`r`).
 
-## Qué se vio
+## 🧠 Qué se vio
 
 - **Funciones**: sintaxis de declaración (`def nombre(parametros):`), por qué se recomienda declararlas al inicio del archivo, y para qué sirve reutilizar bloques de código.
 - **`return`**: cómo devuelve un valor y corta la ejecución de la función; también sirve para salir anticipadamente de una función dentro de un `if`/`for`/`while`.
@@ -19,12 +19,12 @@ Funciones a fondo (parámetros, `return`, valores por defecto con `None`) y mane
 - **Funciones recursivas** (Fibonacci recursivo) vs. **iterativas** (Fibonacci con bucle), y por qué la recursividad puede ser más lenta/pesada en memoria para números grandes.
 - **Factorial iterativo** como ejemplo de acumulación con `for`.
 
-## Ejercicios trabajados
+## 💻 Ejercicios trabajados
 
 - Biblioteca de poemas guardada en un `.txt`: añadir poema, listar títulos, buscar obras por autor, contar versos del poema más largo.
 - Guardar notas de estudiantes en un archivo, acumulando registros con modo `"a"`.
 
-## Ideas clave
+## ✅ Ideas clave
 
 - 🗂️ `open()` con `mode="a"` es la forma segura de ir agregando datos sin perder lo anterior.
 - 🔁 Fibonacci recursivo vs. iterativo: la recursividad es elegante pero más costosa en memoria.

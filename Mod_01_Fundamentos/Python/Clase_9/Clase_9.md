@@ -1,10 +1,10 @@
 # Python — Clase 9
 
-## Tema central
+## 📚 Tema central
 
 Generadores (`yield`) y manejo de excepciones (`try` / `except` / `finally`).
 
-## Qué se vio
+## 🧠 Qué se vio
 
 - **Generadores con `yield`**: a diferencia de `return`, un generador no entrega todos los valores de golpe, sino uno por uno bajo demanda ("lazy evaluation"). Cada `yield` pausa la función y guarda su estado.
 - **`next()`**: pedir el siguiente valor de un generador manualmente.
@@ -17,7 +17,7 @@ Generadores (`yield`) y manejo de excepciones (`try` / `except` / `finally`).
   - `FileNotFoundError` para archivos que no existen.
   - `finally`: bloque que se ejecuta siempre, haya habido error o no.
 
-## Ejercicios trabajados
+## 💻 Ejercicios trabajados
 
 - Generador que entrega los números del 0 al 100 uno por uno.
 - Generador de cuadrados del 1 al 5.
@@ -27,7 +27,7 @@ Generadores (`yield`) y manejo de excepciones (`try` / `except` / `finally`).
 - Generador de 7 números aleatorios.
 - Calculadora con manejo de excepción para división entre cero.
 
-## Ideas clave
+## ✅ Ideas clave
 
 - 💧 `yield` entrega valores de a poco (uno a la vez) en lugar de construir todo de una vez, como abrir el grifo en vez de llenar un balde entero.
 - ⏭️ `next()` avanza manualmente un generador un paso a la vez.

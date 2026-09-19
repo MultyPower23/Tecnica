@@ -1,10 +1,10 @@
 # Java — Clase 19
 
-## Tema central
+## 📚 Tema central
 
 Arreglos (arrays), bucles `while`/`do-while`, y los tres algoritmos clásicos de ordenamiento (burbuja, inserción, selección).
 
-## Qué se vio
+## 🧠 Qué se vio
 
 - **Arreglos (`int[]`, `String[]`)**: declaración con tamaño fijo (`new int[5]`), asignación por índice, recorrido con `for` clásico y con `for-each` (`for (String i : nombre)`).
 - **`.length`**: propiedad (no método) para saber el tamaño de un arreglo.
@@ -15,11 +15,14 @@ Arreglos (arrays), bucles `while`/`do-while`, y los tres algoritmos clásicos de
 - **Algoritmo de inserción**: tomar cada elemento y ubicarlo en su posición correcta entre los ya ordenados (comparado con ordenar cartas en la mano).
 - **Algoritmo de selección**: buscar el menor elemento restante en cada vuelta y mandarlo al inicio del tramo desordenado.
 
-## Archivos de referencia
+## 💻 Ejercicios trabajados
 
-`arreglos.java`, `bucles.java`, `ordenar.java`, `rof.java`
+- `arreglos.java` → declaración, recorrido y `.length` de arreglos, con `for` clásico y `for-each`.
+- `bucles.java` → `while` vs `do-while`, alcance de variables, y comparación de credenciales de login con `.equals()`.
+- `ordenar.java` → los tres algoritmos de ordenamiento (burbuja, inserción, selección).
+- `rof.java` → bucle `for` básico (contar de 1 a 10) y recorrido de un arreglo de nombres saludando a cada uno.
 
-## Ideas clave
+## ✅ Ideas clave
 
 - 🔁 `do-while` ejecuta primero y pregunta después; `while` pregunta primero y puede no ejecutar nunca.
 - 🫧 Burbuja: los elementos grandes "suben" (se van al final) comparando vecinos.

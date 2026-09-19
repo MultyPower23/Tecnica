@@ -1,10 +1,10 @@
 # Python — Clase 3
 
-## Tema central
+## 📚 Tema central
 
 Introducción a variables y tipos de datos básicos.
 
-## Qué se vio
+## 🧠 Qué se vio
 
 - **Variables**: qué son (espacio en memoria RAM para guardar información) y formas correctas/incorrectas de nombrarlas (no empezar con número, no usar espacios).
 - **`print()`** para mostrar valores en pantalla, incluyendo varios argumentos separados por coma.
@@ -17,11 +17,11 @@ Introducción a variables y tipos de datos básicos.
   - `bool` (verdadero/falso)
   - `list` (`[]`) para guardar múltiples valores, con acceso por índice (ej. `lista[2]`)
 
-## Archivo de referencia
+## 💻 Ejercicios trabajados
 
-`clase 3.py`
+Exploración práctica de las distintas formas de declarar variables y de cada tipo de dato (`int`, `float`, `complex`, `str`, `bool`, `list`), imprimiéndolos con `print()` y verificando su tipo con `type()`, todo en un único archivo (`clase 3.py`).
 
-## Ideas clave
+## ✅ Ideas clave
 
 - 🧠 Una variable es una cajita en RAM con un nombre y un valor.
 - 🔤 `type()` te dice qué tipo de dato tiene algo, útil para no confundirte.

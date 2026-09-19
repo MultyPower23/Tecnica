@@ -1,10 +1,10 @@
 # Python — Clase 6
 
-## Tema central
+## 📚 Tema central
 
 `for`, `range()`, diccionarios (introducción) y funciones de librería (`math`).
 
-## Qué se vio
+## 🧠 Qué se vio
 
 - **`for` sobre `range()`**: recorrer un rango de números controlando el flujo.
 - **`in range(...)`** como verificación de pertenencia a un rango (ej. validar que un número esté entre 100 y 200).
@@ -13,7 +13,7 @@
 - **`from math import sqrt as raizCuadrada`**: importar una función específica de una librería y renombrarla.
 - **Funciones combinadas con `for` y `while`** para resolver ejercicios más completos (cajero con menú, número primo, contar cifras, contar caracteres).
 
-## Ejercicios trabajados
+## 💻 Ejercicios trabajados
 
 - Sumar números ingresados dentro de un rango válido hasta que se ingrese 0.
 - Biblioteca de poemas seleccionable por menú.
@@ -23,7 +23,7 @@
 - Verificar si un número es primo.
 - Contar cifras de un número, contar caracteres de una frase, sumar positivos.
 
-## Ideas clave
+## ✅ Ideas clave
 
 - 🔢 `range(inicio, fin, paso)` genera una secuencia sin incluir el valor final.
 - 📚 Las listas también sirven como "menús" indexados para elegir contenido.

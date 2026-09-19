@@ -1,10 +1,10 @@
 # Java — Clase 18
 
-## Tema central
+## 📚 Tema central
 
 Clase `Math`, operadores lógicos/relacionales, condicionales, operador ternario y operadores matemáticos/incrementales.
 
-## Qué se vio
+## 🧠 Qué se vio
 
 - **Clase `Math`**: `Math.sqrt()` (raíz cuadrada), `Math.pow(base, exponente)` (potencia), `Math.round()` (redondeo), `Math.random()` (número entre 0 y 1). Nota: casi todas trabajan con `double`.
 - **Caracteres de formato en strings**: `\t` (tabulación), `\n` (salto de línea), `\b` (retroceso), y cómo escapar comillas y barras invertidas.
@@ -15,11 +15,15 @@ Clase `Math`, operadores lógicos/relacionales, condicionales, operador ternario
 - **Operadores de incremento/decremento** (`++`, `--`) y la diferencia entre pre-incremento (`++x`) y post-incremento (`x++`): en post-incremento la variable toma el valor *antes* de sumar/restar, luego se actualiza.
 - **`switch` anidado** para menús con submenús (elegir tipo de operación y luego cuál específica).
 
-## Archivos de referencia
+## 💻 Ejercicios trabajados
 
-`clase_math.java`, `el_primo_de_match.java`, `formatos_strings.java`, `operadores_logicos.java`, `operadores_matematicos.java`
+- `clase_math.java` → métodos de la clase `Math` (`sqrt`, `pow`, `round`, `random`).
+- `el_primo_de_match.java` → calculadora con `switch/case` sobre una letra ingresada por `JOptionPane` (nombre en broma por el `match` de Python).
+- `formatos_strings.java` → caracteres de formato (`\t`, `\n`, `\b`) y escape de comillas/barras invertidas.
+- `operadores_logicos.java` → operadores lógicos/relacionales, comparación de Strings y operador ternario.
+- `operadores_matematicos.java` → incremento/decremento (`++`, `--`) y la diferencia entre pre- y post-incremento.
 
-## Ideas clave
+## ✅ Ideas clave
 
 - 🧮 `Math.pow()`, `Math.sqrt()` y `Math.round()` casi siempre trabajan con `double`.
 - ⚖️ Nunca compares texto con `==` en Java — compara si están en la misma dirección de memoria, no si dicen lo mismo (para eso se usa `.equals()`).

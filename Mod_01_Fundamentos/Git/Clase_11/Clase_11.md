@@ -2,11 +2,11 @@
 
 > ⚠️ En esta clase no se tomaron notas propias durante la sesión; lo poco que se escribió quedó en un repositorio de prueba que ya no existe. Este resumen se reconstruyó a partir de un archivo de comandos guardado aparte (`Comandos_git.txt`), así que puede faltar contexto o ejercicios que se hicieron en vivo y no quedaron registrados.
 
-## Tema central
+## 📚 Tema central
 
 Introducción a Git como sistema de control de versiones y a GitHub como plataforma para alojar repositorios.
 
-## Qué se vio
+## 🧠 Qué se vio
 
 - **Concepto de commit**: cada vez que se guarda un cambio con Git, se crea una "captura" (snapshot) de cómo estaban los archivos en ese momento, con fecha, autor y mensaje asociados.
 - **Ramas (`branch`)**: líneas de desarrollo paralelas dentro de un mismo repositorio, que luego se pueden combinar con un `merge`.
@@ -15,7 +15,9 @@ Introducción a Git como sistema de control de versiones y a GitHub como platafo
 - **Deshacer cambios**: distintas formas de revertir según qué tan "adentro" esté el cambio (antes de `add`, después de un `commit`, etc.), siendo `revert` la opción más segura en equipo porque no reescribe el historial, solo agrega un commit que deshace el anterior.
 - **Cierre de sesión de Git en un equipo compartido** (ej. salas de la universidad): cómo borrar las credenciales guardadas para no dejar la sesión abierta en un PC que no es propio.
 
-## Comandos vistos
+## 💻 Ejercicios trabajados
+
+No fueron ejercicios de código sino práctica directa de comandos, organizados por bloque:
 
 ### Configuración inicial (una sola vez)
 
@@ -69,7 +71,7 @@ printf "protocol=https\nhost=github.com\n" | git credential-manager erase
 git credential-manager github login
 ```
 
-## Ideas clave
+## ✅ Ideas clave
 
 - 📸 Un commit es como una foto del proyecto en un momento dado — puedes volver a cualquier foto anterior si algo sale mal.
 - 🌿 Las ramas permiten probar cosas nuevas sin tocar el código principal, y luego fusionarlas (`merge`) cuando funcionan.

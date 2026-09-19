@@ -1,10 +1,10 @@
 # Python — Clase 7
 
-## Tema central
+## 📚 Tema central
 
 Profundización en `for`, `range()` y `len()`, más una batería grande de ejercicios prácticos con `import random`.
 
-## Qué se vio
+## 🧠 Qué se vio
 
 - **`range(inicio, fin, paso)`** explicado a fondo: siempre excluye el valor final, por defecto empieza en 0 y avanza de 1 en 1.
 - **`len()`**: obtiene la longitud de listas o strings, útil combinado con `range(len(lista))` para recorrer por índice.
@@ -13,7 +13,7 @@ Profundización en `for`, `range()` y `len()`, más una batería grande de ejerc
 - Recorrido de listas mixtas (con distintos tipos de dato dentro).
 - Patrón de menú con `match/case` para probar múltiples ejercicios desde un mismo archivo.
 
-## Ejercicios trabajados
+## 💻 Ejercicios trabajados
 
 - Contar apariciones de una letra en una palabra.
 - Sumar una lista de números ingresados por el usuario.
@@ -31,7 +31,7 @@ Profundización en `for`, `range()` y `len()`, más una batería grande de ejerc
 - Invertir una palabra letra por letra.
 - "Multiplicador de gritos" (repetición creciente de un carácter).
 
-## Ideas clave
+## ✅ Ideas clave
 
 - 📏 `range(a, b, paso)` nunca incluye `b`.
 - 📐 `len()` + `range()` es la combinación clásica para recorrer por índice.

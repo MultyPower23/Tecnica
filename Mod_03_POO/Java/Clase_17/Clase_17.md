@@ -1,10 +1,10 @@
 # Java — Clase 17
 
-## Tema central
+## 📚 Tema central
 
 Primeros pasos en Java: estructura de un programa, tipos primitivos, entrada de datos por consola y por ventanas, e interpolación de strings.
 
-## Qué se vio
+## 🧠 Qué se vio
 
 - **Estructura básica de un archivo Java**: `package` (ubicación del archivo), `class` (contenedor obligatorio de todo el código) y el método `main` (punto de arranque del programa).
 - **`System.out.println()`** para imprimir en consola.
@@ -22,11 +22,15 @@ Primeros pasos en Java: estructura de un programa, tipos primitivos, entrada de 
 - **Entrada/salida con `JOptionPane`** (ventanas emergentes): `showInputDialog()` siempre devuelve texto, así que hay que convertirlo con `Integer.parseInt()` o `Double.parseDouble()`; `showMessageDialog()` para mostrar resultados.
 - **Interpolación de strings**: `System.out.printf()` para imprimir directo con formato, y `String.format()` para guardar el resultado en una variable. Comodines `%s`, `%d`, `%f` (con `.2f` para decimales), `%b`. También se vio cómo especificar el orden de los valores con `%posición$tipo`.
 
-## Archivos de referencia
+## 💻 Ejercicios trabajados
 
-`hello_world.java`, `variables.java`, `inputs.java`, `JOption.java`, `interpolacion_strings.java`
+- `hello_world.java` → primer programa, estructura básica (`class` + `main` + `println`).
+- `variables.java` → tipos primitivos y constantes (`final`).
+- `inputs.java` → entrada de datos con `Scanner` (`.next()`, `.nextLine()`, etc.).
+- `JOption.java` → entrada/salida con `JOptionPane` (ventanas emergentes).
+- `interpolacion_strings.java` → `printf`/`String.format()` y los comodines de formato.
 
-## Ideas clave
+## ✅ Ideas clave
 
 - 🏗️ Todo en Java vive dentro de una clase, y el `main` es el punto de arranque obligatorio.
 - 📏 Cada tipo primitivo tiene un tamaño y rango fijo — hay que elegir el que le quepa al dato.
