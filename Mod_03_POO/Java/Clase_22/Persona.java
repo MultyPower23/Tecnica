@@ -1,13 +1,9 @@
 package Mod_03_POO.Java.Clase_22;
 
-// Esta clase es el ejemplo clásico para entender el METODO CONSTRUCTOR.
-// Piensa en el constructor como el "__init__" de Python: es el método que
-// se ejecuta automáticamente apenas creas el objeto (cuando pones "new").
-// La diferencia es que en Java el constructor SIEMPRE se llama igual que
-// la clase (Persona -> Persona()), no tiene un nombre fijo como __init__.
-public class Persona { // Debe tener el mismo nombre del archivo (Persona.java)
-
-  // Atributos = las características que va a tener CADA persona que crees
+// El constructor se ejecuta automáticamente al crear un objeto con new.
+// En Java tiene el mismo nombre de la clase y no tiene tipo de retorno.
+public class Persona {
+  // Atributos: características de cada objeto Persona.
   String nombre;
   int edad;
   float estatura;
@@ -23,16 +19,14 @@ public class Persona { // Debe tener el mismo nombre del archivo (Persona.java)
   // Lo que hace: recibe los datos por parámetro y los guarda en los
   // atributos del objeto que se está creando en ese momento.
   public Persona(String nombre, int edad, float estatura, int documento) {
-    // "this" le dice a Java "el atributo de ESTE objeto", para no
-    // confundirlo con el parámetro que se llama igual.
-    // Es lo mismo que en Python cuando escribes self.nombre = nombre
+    // this se refiere al atributo del objeto actual.
     this.nombre = nombre;
     this.edad = edad;
     this.estatura = estatura;
     this.documento = documento;
   }
 
-  // Método normal (no constructor) que solo muestra los datos ya guardados
+  // Método normal que muestra los datos guardados.
   public void MostrarDatos() {
     System.out.println("tu nombre es " + nombre);
     System.out.println("tienes " + edad + " años");
@@ -41,37 +35,24 @@ public class Persona { // Debe tener el mismo nombre del archivo (Persona.java)
   }
 
   public static void main(String[] args) {
-    // Acá se dispara el constructor automáticamente: apenas pones "new
-    // Persona(...)", Java ejecuta el bloque de arriba con estos 4 valores.
+    // new crea el objeto y ejecuta su constructor.
     Persona p1 = new Persona("Shairo", 15, 1.72f, 987654321);
+
     p1.MostrarDatos();
   }
 }
 
-// Notas sueltas de la clase (tal cual las anotaste):
-//
-// - Para más practicidad: clic derecho -> Source Action -> "Generate
-// Constructors" y NetBeans/VSCode te arma el constructor solo, tomando
-// los atributos que tenga la clase.
-//
-// - SOBRECARGA DE CONSTRUCTORES: puedes tener más de un constructor en la
-// misma clase (ej. uno que reciba 4 datos y otro que reciba solo 2),
-// siempre y cuando se puedan diferenciar entre sí. Java los distingue por
-// la firma del método, es decir por:
-// * la cantidad de parámetros, o
-// * el tipo de esos parámetros, o
-// * el orden en que van
-// Ejemplo: Persona(String nombre, int edad) y Persona(int edad, String
-// nombre) SÍ son válidos juntos porque el orden de los tipos es distinto.
-//
-// - NO SE PUEDE tener dos constructores con exactamente la misma firma
-// (mismos tipos, mismo orden), aunque cambies los nombres de los
-// parámetros — Java no los distingue por el nombre del parámetro, solo
-// por el tipo y el orden.
-//
-// ⚡ Contraste rápido con Python: en Python una clase solo puede tener UN
-// __init__. Si "necesitas" varias formas de crear el objeto, se simula con
-// valores por defecto (def __init__(self, nombre, edad=None)) o con
-// @classmethod. En Java, en cambio, la sobrecarga de constructores es una
-// herramienta real del lenguaje: puedes tener varios constructores de
-// verdad, cada uno independiente.
+// NetBeans/VSCode puede generar el constructor automáticamente con
+// Source Action -> Generate Constructors.
+
+// Sobrecarga de constructores: una clase puede tener varios constructores
+// si sus firmas son diferentes. Se distinguen por cantidad, tipo u orden
+// de los parámetros.
+// Ejemplo: Persona(String nombre, int edad) y
+// Persona(int edad, String nombre) son válidos porque cambia el orden.
+// No pueden existir dos constructores con la misma firma; los nombres
+// de los parámetros no cuentan para diferenciarlos.
+
+// En Python una clase solo puede tener un __init__. Varias formas de crear
+// el objeto se simulan con valores por defecto o @classmethod.
+// En Java sí se pueden tener varios constructores sobrecargados.
