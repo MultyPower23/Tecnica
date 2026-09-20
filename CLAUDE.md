@@ -76,6 +76,13 @@ No se entrega un cambio de estructura sin haber revisado esto. Si algo quedó ro
 - Renombres que solo cambian mayúsculas/minúsculas requieren dos pasos en Windows/NTFS: `git mv X X_tmp` → `git mv X_tmp Y` (un solo paso falla con "Invalid argument").
 - Antes de correr un script que modifique el repo: probarlo en una copia y mostrar que corrió limpio (links no rotos, sin duplicados, rutas y conexiones intactas) antes de ejecutarlo de verdad.
 
+## Pull Requests
+
+- Al terminar el trabajo de una rama, abrir un Pull Request hacia `main` en vez de mergear directo por consola.
+- Título del PR con el mismo prefijo que usarían los commits de esa rama (`clase:`, `fix:`, `chore:`, etc.).
+- Descripción del PR: qué cambia y por qué, en un par de líneas — no listar archivo por archivo, eso ya lo muestra el diff.
+- El merge lo hago yo desde GitHub una vez lo reviso; no cerrar ni mergear el PR sin mi confirmación.
+
 ## Comentarios y explicaciones dentro del código
 
 Referencia de estilo: commit `b159068` (`chore: organizar comentarios de java`). Ese es el estándar para cualquier lenguaje.
