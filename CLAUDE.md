@@ -31,6 +31,8 @@ Tecnica/
 │   └── Ejercicios/     PARALELA a Java/, no dentro de ella
 │       ├── Taller/          entrega calificada, con su guía en PDF
 │       └── Trabajo_Final/   git submodule
+├── Mod_04_Dispositivos_Moviles/
+│   └── Kotlin/        Clase_27 en adelante, una carpeta por clase
 ├── INDICE_GENERAL.md     índice de todas las clases con fecha y tema — revisar ahí primero
 ├── COMMIT_CONVENTION.md  prefijos y reglas de mensajes de commit
 ├── README.md
@@ -43,6 +45,8 @@ Tecnica/
 La numeración de clase es **continua en todo el repo** (no reinicia por módulo ni por materia) — refleja el orden cronológico real. Los módulos llevan prefijo `Mod_0X_` para evitar que un nombre de carpeta empiece por número, cosa que rompe los nombres de package en lenguajes que los usan.
 
 Cada módulo tiene su `README.md` propio además del README raíz.
+
+Pendiente de `Mod_04_Dispositivos_Moviles`: no tiene `README.md` propio ni sección en la tabla "📖 Contenido por materia" del README raíz hasta la séptima clase del módulo (Clase_33), para escribirlos con clases de referencia. Al llegar a la Clase_33: crear el README del módulo, agregar su sección en el README raíz y actualizar este archivo (diagrama de estructura y esta nota).
 
 ## ⚠️ Regla crítica: verificar rutas y conexiones después de cualquier cambio
 
