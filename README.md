@@ -53,6 +53,9 @@ Tecnica/
 │   │   └── Clase_17/ ... Clase_26/
 │   └── Ejercicios/
 │
+├── Mod_04_Dispositivos_Moviles/
+│   └── Clase_27/  →  Clase_36/
+│
 ├── INDICE_GENERAL.md
 ├── README.md
 └── .vscode/
