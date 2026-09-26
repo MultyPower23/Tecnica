@@ -2,11 +2,11 @@
 
 ## 📚 Tema central
 
-Cierre y sustentación oral del proyecto final de POO: el **Sistema de Gestión Aeroportuaria**, hecho en pareja con Sebastian Hernandez, aplicando herencia, clases abstractas y polimorfismo sobre un programa de consola.
+Entrega y exposición oral del proyecto final de POO frente al grupo completo: el **Sistema de Gestión Aeroportuaria**, hecho en pareja con Sebastian Hernandez, aplicando herencia, clases abstractas y polimorfismo sobre un programa de consola.
 
 ## 🧠 Qué se vio
 
-Esta clase fue la entrega y exposición, no teoría nueva — pero vale repasar qué pedía el proyecto y por qué está armado como está:
+Esta clase fue la entrega y la exposición frente al grupo, no teoría nueva — pero vale repasar qué pedía el proyecto y por qué está armado como está:
 
 **El encargo:** una compañía necesita consultar sus aeropuertos, las aerolíneas que operan en cada uno, los vuelos que ofrecen y los pasajeros con asiento reservado. Aplicación de consola, sin base de datos — todo vive en memoria y se precarga al iniciar con `cargarDatos()` (3 aeropuertos, 3 compañías, 6 vuelos, 5 pasajeros).
 
@@ -27,7 +27,7 @@ No fueron ejercicios sueltos sino la entrega completa del proyecto final, en 4 p
 - **Código fuente (.zip):** las 7 clases terminadas — `Pasajero`, `Vuelo`, `Compania`, `Aeropuerto` (abstracta), `AeropuertoPublico`, `AeropuertoPrivado`, `Principal` — más la clase de apoyo `Utilidades` (encabezado, limpiar consola, `cargarDatos()`).
 - **Evidencias (PDF):** el código de cada clase junto con una captura de cada una de las cinco opciones del menú funcionando.
 - **Diagrama de clases:** las 7 clases con atributos, métodos y flechas de herencia.
-- **Sustentación oral:** exposición de 5 minutos por estudiante, explicando su propio código.
+- **Sustentación oral:** exposición de 5 minutos por estudiante frente al grupo completo, explicando su propio código.
 
 ## ⚠️ Errores comunes / cosas a las que prestar atención
 
@@ -40,7 +40,7 @@ Estos son los cuatro errores que la guía advertía explícitamente que se comet
 
 ## ✅ Ideas clave
 
-- 🏁 Esta clase fue la entrega y sustentación, no contenido nuevo — el cierre real del Módulo 3 de POO.
+- 🏁 Esta clase fue la entrega y la exposición oral frente al grupo, no contenido nuevo — el cierre real del Módulo 3 llegó en la [Clase_26](../Clase_26/Clase_26.md), con la sustentación individual frente al profesor.
 - 🧩 El truco de todo el proyecto: el menú nunca pregunta de qué tipo es un aeropuerto, simplemente le pide que responda — eso es polimorfismo aplicado, no solo teoría.
 - ⚖️ El diseño de clases y la herencia pesan más (30 pts) que el menú funcionando (25 pts) — un programa que "solo funciona" sin buena arquitectura no basta.
 - 🔢 El conteo real de pasajeros nunca se guarda aparte — siempre se calcula con `.size()` para que no se desincronice.
