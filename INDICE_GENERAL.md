@@ -74,6 +74,8 @@ Resumen rápido de qué se vio en cada clase, para buscar sin tener que entrar c
 
 ## Mod_04_Dispositivos_Moviles
 
+### Kotlin
+
 | Clase | Fecha | Tema principal |
 | --- | --- | --- |
-| [Clase_27](Mod_04_Dispositivos_Moviles/Clase_27/Clase_27.md) | 2026-09-26 | Tipos de aplicaciones móviles y proceso de desarrollo |
+| [Clase_27](Mod_04_Dispositivos_Moviles/Kotlin/Clase_27/Clase_27.md) | 2026-09-26 | Tipos de aplicaciones móviles y proceso de desarrollo |
