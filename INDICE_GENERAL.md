@@ -69,4 +69,5 @@ Resumen rápido de qué se vio en cada clase, para buscar sin tener que entrar c
 | [Clase_22](Mod_03_POO/Java/Clase_22/Clase_22.md) | 2026-08-22 | POO: clases, atributos, `this`, `super()`, herencia, polimorfismo, encapsulamiento, `abstract` y `interface` |
 | [Clase_23](Mod_03_POO/Java/Clase_23/Clase_23.md) | 2026-08-29 | Taller de repaso: operadores, condicionales, bucles, arreglos y matrices (30 ejercicios) |
 | [Clase_24](Mod_03_POO/Java/Clase_24/Clase_24.md) | 2026-09-05 | Herencia, polimorfismo, sobreescritura (`@Override`), intro a clases abstractas |
-| [Clase_25](Mod_03_POO/Java/Clase_25/Clase_25.md) | 2026-09-12 | Cierre y sustentación oral del proyecto final: herencia, clases abstractas y polimorfismo (Sistema de Gestión Aeroportuaria) |
+| [Clase_25](Mod_03_POO/Java/Clase_25/Clase_25.md) | 2026-09-12 | Entrega y exposición oral del proyecto final frente al grupo: herencia, clases abstractas y polimorfismo (Sistema de Gestión Aeroportuaria) |
+| [Clase_26](Mod_03_POO/Java/Clase_26/Clase_26.md) | 2026-09-19 | Sustentación oral individual del proyecto final frente al profesor, con preguntas en vivo — cierre real del Módulo 3 |
