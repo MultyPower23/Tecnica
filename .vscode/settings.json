@@ -109,6 +109,7 @@
     "Mod_01_Fundamentos": "core",
     "Mod_02_Desarrollo_Humano": "messages",
     "Mod_03_POO": "class",
+    "Mod_04_Dispositivos_Moviles": "android",
     "PSeInt": "tools",
     "Ejercicios": "test",
     "Trabajo_Final": "project",
@@ -145,7 +146,7 @@
     "Clase_24.md": "changelog",
     "Clase_25.md": "changelog",
     "Clase_26.md": "changelog",
-
-
+    "Clase_27.md": "changelog",
+    "Clase_28.md": "changelog",
   },
 }
