@@ -1,3 +1,6 @@
 [submodule "Mod_03_POO/Ejercicios/Trabajo_Final"]
 	path = Mod_03_POO/Ejercicios/Trabajo_Final
 	url = https://github.com/MultyPower23/Hernandez_Ciro_ProyectoFinalJava.git
+[submodule "Mod_04_Dispositivos_Moviles"]
+	path = Mod_04_Dispositivos_Moviles
+	url = https://github.com/MultyPower23/Mod_04_Dispositivos_Moviles.git
