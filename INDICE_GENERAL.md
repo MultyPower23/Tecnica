@@ -79,3 +79,5 @@ Resumen rápido de qué se vio en cada clase, para buscar sin tener que entrar c
 | Clase | Fecha | Tema principal |
 | --- | --- | --- |
 | [Clase_27](Mod_04_Dispositivos_Moviles/Kotlin/Clase_27/Clase_27.md) | 2026-09-26 | Tipos de aplicaciones móviles y proceso de desarrollo |
+| [Clase_28](Mod_04_Dispositivos_Moviles/Kotlin/Clase_28/Clase_28.md) | 2026-10-03 | Primer contacto con Android Studio: IDE, estructura de un proyecto, archivos de configuración, emulador Pixel 9 e imágenes |
+| [Clase_29](Mod_04_Dispositivos_Moviles/Kotlin/Clase_29/Clase_29.md) | 2026-10-17 | Pantalla de precarga con animación Lottie, imágenes en `drawable` y textos en `strings.xml` |
