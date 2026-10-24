@@ -53,7 +53,7 @@ Tecnica/
 │   │   └── Clase_17/ ... Clase_26/
 │   └── Ejercicios/
 │
-├── Mod_04_Dispositivos_Moviles/
+├── Mod_04_Dispositivos_Moviles/   # submódulo
 │   └── Kotlin/
 │       └── Clase_27/  →  Clase_36/
 │
