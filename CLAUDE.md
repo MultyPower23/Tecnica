@@ -76,7 +76,7 @@ No se entrega un cambio de estructura sin haber revisado esto. Si algo quedó ro
 
 - **Nunca trabajar directo sobre `main`.** Toda tarea (clase nueva, reorganización, fix) va en una rama nueva; `main` solo recibe merges que yo ya revisé.
 - Nombrar ramas de forma descriptiva según la tarea (ej. `clase-27`, `reorganiza-ejercicios`, `fix-indice`).
-- Mensajes de commit según `COMMIT_CONVENTION.md`: prefijos `clase:`, `resumen:`, `fix:`, `ejercicio:`, `config:`, `docs:`, `chore:`; minúscula después de los dos puntos, verbo en presente, sin punto final, un commit por propósito.
+- Mensajes de commit según `COMMIT_CONVENTION.md`: prefijos `work:`, `clase:`, `resumen:`, `fix:`, `ejercicio:`, `config:`, `docs:`, `chore:`; minúscula después de los dos puntos, verbo en presente, sin punto final, un commit por propósito.
 - Renombres que solo cambian mayúsculas/minúsculas requieren dos pasos en Windows/NTFS: `git mv X X_tmp` → `git mv X_tmp Y` (un solo paso falla con "Invalid argument").
 - Antes de correr un script que modifique el repo: probarlo en una copia y mostrar que corrió limpio (links no rotos, sin duplicados, rutas y conexiones intactas) antes de ejecutarlo de verdad.
 

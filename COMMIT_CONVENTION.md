@@ -6,7 +6,8 @@ Referencia rápida para mensajes de commit en este repo. No es Conventional Comm
 
 | Prefijo | Cuándo usarlo | Ejemplo |
 | --- | --- | --- |
-| `clase:` | Clase nueva completa (código + resumen) | `clase: agrega Clase_20, herencia y polimorfismo` |
+| `work:` | Avance parcial mientras se crea o desarrolla un archivo (sesión de trabajo en curso) | `work: avanza Clase_31, agrega función de validación` |
+| `clase:` | Cierre de una sesión de cambios lista, o varios cambios de una clase subidos a la vez (código + resumen) | `clase: agrega Clase_20, herencia y polimorfismo` |
 | `resumen:` | Solo el `.md` de resumen (redacción final, corrección) | `resumen: reescribe Clase_18 con apuntes completos` |
 | `fix:` | Corrección de error real (link roto, typo que cambia significado, código que no compilaba) | `fix: corrige ruta rota en INDICE_GENERAL.md` |
 | `ejercicio:` | Actividad suelta o entrega de `Ejercicios/` | `ejercicio: agrega ejercicio 15 de POO` |
