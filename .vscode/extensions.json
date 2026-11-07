@@ -1,6 +1,9 @@
 {
   "recommendations": [
+    "zhuangtongfa.material-theme",
     "pkief.material-icon-theme",
+    "anthropic.claude-code",
+    "ms-ceintl.vscode-language-pack-es",
     "ms-python.python",
     "ms-python.black-formatter",
     "esbenp.prettier-vscode",
@@ -9,9 +12,11 @@
     "qwtel.sqlite-viewer",
     "redhat.java",
     "vscjava.vscode-java-pack",
+    "mathiasfrohlich.kotlin",
+    "redhat.vscode-xml",
     "bierner.markdown-preview-github-styles",
     "bierner.github-markdown-preview",
-    "bierner.markdown-checkboxes",
+    "bierner.markdown-checkbox",
     "bierner.markdown-emoji",
     "bierner.markdown-footnotes",
     "DavidAnson.vscode-markdownlint",
@@ -19,7 +24,6 @@
     "eamodio.gitlens",
     "formulahendry.auto-rename-tag",
     "christian-kohler.path-intellisense",
-    "mhutchie.git-graph",
-    "ritwickdey.liveserver"
+    "mhutchie.git-graph"
   ]
 }
