@@ -27,12 +27,13 @@ Tecnica/
 ├── Mod_02_Desarrollo_Humano/   README.md, Clase_15, Clase_16
 ├── Mod_03_POO/
 │   ├── README.md
-│   ├── Java/          clases del módulo, una carpeta por clase
+│   ├── Java/          Clase_17 a Clase_26, una carpeta por clase
 │   └── Ejercicios/     PARALELA a Java/, no dentro de ella
 │       ├── Taller/          entrega calificada, con su guía en PDF
 │       └── Trabajo_Final/   git submodule
-├── Mod_04_Dispositivos_Moviles/
-│   └── Kotlin/        Clase_27 en adelante, una carpeta por clase
+├── Mod_04_Dispositivos_Moviles/   git submodule (repo propio), Clase_27 a Clase_36
+│   ├── Kotlin/        Clase_N/ con Clase_N.md + proyectos de Android Studio de esa clase
+│   └── Juann_Ciro/    proyecto principal del módulo (Java y XML), desde la Clase_29
 ├── INDICE_GENERAL.md     índice de todas las clases con fecha y tema — revisar ahí primero
 ├── COMMIT_CONVENTION.md  prefijos y reglas de mensajes de commit
 ├── README.md
@@ -46,7 +47,7 @@ La numeración de clase es **continua en todo el repo** (no reinicia por módulo
 
 Cada módulo tiene su `README.md` propio además del README raíz.
 
-Pendiente de `Mod_04_Dispositivos_Moviles`: no tiene `README.md` propio ni sección en la tabla "📖 Contenido por materia" del README raíz hasta la séptima clase del módulo (Clase_33), para escribirlos con clases de referencia. Al llegar a la Clase_33: crear el README del módulo, agregar su sección en el README raíz y actualizar este archivo (diagrama de estructura y esta nota).
+`Mod_04_Dispositivos_Moviles` es un submódulo con su propio `README.md` y `CLAUDE.md`; las reglas de trabajo dentro de él están en ese `CLAUDE.md`. Su sección en la tabla "📖 Contenido por materia" del README raíz queda pendiente hasta la séptima clase del módulo (Clase_33), para escribirla con clases de referencia. Al llegar a la Clase_33: agregar esa sección en el README raíz y actualizar este archivo (diagrama de estructura y esta nota).
 
 ## ⚠️ Regla crítica: verificar rutas y conexiones después de cualquier cambio
 
@@ -71,6 +72,16 @@ No se entrega un cambio de estructura sin haber revisado esto. Si algo quedó ro
 - No existe `Recursos/` ni `INDICE_TEMAS.md` — evaluados y descartados a propósito.
 - Formateo automático al guardar está activo por lenguaje. Para bloques que quiero ver en un formato concreto (matrices, tablas), envolver a mano con `// @formatter:off` / `// @formatter:on`.
 - `markdownlint` para los `.md`: solo `MD040` desactivado, el resto por defecto.
+
+## Mod_04: Dispositivos Móviles (Android Studio)
+
+- Repo propio `MultyPower23/Mod_04_Dispositivos_Moviles`, montado en `Mod_04_Dispositivos_Moviles/` como git submodule.
+- Módulo de 10 semanas, de Clase_27 a Clase_36: la primera semana es introducción y la última es la entrega final.
+- Dentro del submódulo, `Kotlin/Clase_N/` lleva `Clase_N.md` y los proyectos de Android Studio de esa clase, cada uno en su subcarpeta. `Juann_Ciro/` vive en la raíz del submódulo porque es el proyecto principal y se trabaja clase a clase; sus avances se documentan en el `Clase_N.md` de cada clase.
+- Los proyectos de Android Studio se abren desde la carpeta que contiene `settings.gradle(.kts)`, no desde la raíz del repo.
+- `.idea/`, `.gradle/`, `build/` y `local.properties` no se versionan.
+- Una clase nueva implica dos cambios: el commit en el submódulo y, en `Tecnica`, la fila en `INDICE_GENERAL.md` más la actualización del puntero del submódulo. Ambos se revisan en el mismo trabajo, igual que las demás rutas.
+- Al mover o renombrar algo dentro del submódulo, revisar también `package`, `namespace`/`applicationId`, `rootProject.name`, referencias a recursos (`@drawable/`, `@string/`, `R.layout.`), el `AndroidManifest.xml` y la tabla de proyectos del `README.md` del módulo.
 
 ## Git — flujo de trabajo obligatorio
 

@@ -1,7 +1,7 @@
 {
   "files.autoSave": "afterDelay",
   "workbench.startupEditor": "none",
-  "workbench.colorTheme": "One Dark Pro",
+  "workbench.colorTheme": "One Dark Pro Night Flat",
   "workbench.iconTheme": "material-icon-theme",
 
   "explorer.confirmDragAndDrop": false,
@@ -60,17 +60,17 @@
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "redhat.java"
   },
-   "java.format.settings.url": "${workspaceFolder}/.vscode/GoogleStyle.xml",
-   "java.format.settings.profile": "GoogleStyle",
-   "java.project.resourceFilters": [
-     "node_modules",
-     ".git",
-     "\\.docx$",
-     "\\.doc$",
-     "\\.pdf$",
-     "\\.pptx$",
-     "\\.zip$"
-   ],
+  "java.format.settings.url": "${workspaceFolder}/.vscode/GoogleStyle.xml",
+  "java.format.settings.profile": "GoogleStyle",
+  "java.project.resourceFilters": [
+    "node_modules",
+    ".git",
+    "\\.docx$",
+    "\\.doc$",
+    "\\.pdf$",
+    "\\.pptx$",
+    "\\.zip$"
+  ],
 
   // ==================== MARKDOWN ====================
   "[markdown]": {
@@ -91,8 +91,8 @@
 
   // ==================== LINTERS ====================
   "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": "explicit",
-      "source.fixAll.markdownlint": "explicit"
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.markdownlint": "explicit"
   },
 
   "redhat.telemetry.enabled": true,
@@ -150,6 +150,6 @@
     "Clase_27.md": "changelog",
     "Clase_28.md": "changelog",
     "Clase_29.md": "changelog",
-    "Clase_30.md": "changelog",
-  },
+    "Clase_30.md": "changelog"
+  }
 }
